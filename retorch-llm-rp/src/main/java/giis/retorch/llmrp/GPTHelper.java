@@ -10,6 +10,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class GPTHelper {
@@ -72,7 +73,7 @@ public class GPTHelper {
             }
 
         } catch (IOException e) {
-            log.error(e.getMessage());
+            log.error(Arrays.toString(e.getStackTrace()));
             System.exit(-1);
         }
 
