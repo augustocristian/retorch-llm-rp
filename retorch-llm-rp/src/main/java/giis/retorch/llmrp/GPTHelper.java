@@ -27,7 +27,7 @@ public class GPTHelper {
             // Set request method and headers
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
-            conn.setRequestProperty("Authorization", "Bearer " + apiKey);
+            conn.setRequestProperty("Authorization", STR."Bearer \{apiKey}");
             conn.setDoOutput(true);
 
             // Create JSON request body
@@ -65,11 +65,11 @@ public class GPTHelper {
 
             // Get response
             int responseCode = conn.getResponseCode();
-            log.debug("Response Code:{} " ,responseCode);
+            log.debug("Response Code:{} ", responseCode);
 
             try (Scanner scanner = new Scanner(conn.getInputStream())) {
                 String responseBody = scanner.useDelimiter("\\A").next();
-                log.debug("Response Body: {}" , responseBody);
+                log.debug("Response Body: {}", responseBody);
             }
 
         } catch (IOException e) {
