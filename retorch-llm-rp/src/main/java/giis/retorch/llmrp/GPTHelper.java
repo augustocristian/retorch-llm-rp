@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
@@ -15,19 +17,21 @@ import java.util.Scanner;
 
 public class GPTHelper {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
-
+    static final String PATH_KEY="CHATGPT_API_KEY";
     public void sendChatGPTRequest(String body) {
-        String apiKey = System.getProperty("CHATGPT_API_KEY") != null ? System.getProperty("CHATGPT_API_KEY") : System.getenv("CHATGPT_API_KEY");
+
+        String apiKey = System.getProperty(PATH_KEY) != null ? System.getProperty(PATH_KEY) : System.getenv(PATH_KEY);
         String urlString = "https://api.openai.com/v1/chat/completions";
         try {
             // Create URL and HttpURLConnection objects
-            URL url = new URL(urlString);
+            URI uri = new URI(urlString);
+            URL url = uri.toURL();
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
             // Set request method and headers
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
-            conn.setRequestProperty("Authorization", STR."Bearer \{apiKey}");
+            conn.setRequestProperty("Authorization", "Bearer " + apiKey);
             conn.setDoOutput(true);
 
             // Create JSON request body
@@ -72,7 +76,7 @@ public class GPTHelper {
                 log.debug("Response Body: {}", responseBody);
             }
 
-        } catch (IOException e) {
+        } catch (IOException | URISyntaxException e) {
             log.error(Arrays.toString(e.getStackTrace()));
             System.exit(-1);
         }

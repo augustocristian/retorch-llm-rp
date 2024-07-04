@@ -9,9 +9,12 @@ import java.io.IOException;
 
 public class ExperimentationMainClass {
     private static final Logger log = LoggerFactory.getLogger(ExperimentationMainClass.class);
+    ExperimentationHelper exhelper;
+    GPTHelper gptHelper;
 
     public ExperimentationMainClass() {
-        //This is the default constructor to avoid smells
+        exhelper = new ExperimentationHelper();
+        gptHelper = new GPTHelper();
     }
 
     public static void putOutputToFile(String filePath, String namePrompt, String output) throws IOException {
@@ -32,7 +35,7 @@ public class ExperimentationMainClass {
                         dir.getAbsolutePath(), e.getStackTrace());
             }
         }
-        try (FileOutputStream outputStream = new FileOutputStream(STR."\{filePath}/\{namePrompt}.txt")) {
+        try (FileOutputStream outputStream = new FileOutputStream(filePath + "/" + namePrompt + ".txt")) {
             byte[] strToBytes = output.getBytes();
             outputStream.write(strToBytes);
         }

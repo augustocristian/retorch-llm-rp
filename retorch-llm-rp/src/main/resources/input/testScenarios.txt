@@ -1,0 +1,120 @@
+### Test Scenario 1: User Registration and Login
+**Objective:** Verify that users can register, pass CAPTCHA, and log in successfully.
+
+**Preconditions:**
+- The application is accessible.
+- No prior account exists for the test email.
+
+**Steps:**
+1. Navigate to the registration page.
+2. Fill in the registration form with a valid email, username, and password.
+3. Complete the CAPTCHA.
+4. Submit the registration form.
+5. Check for a confirmation message indicating successful registration.
+6. Navigate to the login page.
+7. Enter the registered email and password.
+8. Submit the login form.
+
+**Expected Results:**
+- User receives a confirmation message after registration.
+- User can log in successfully and is redirected to the dashboard.
+
+### Test Scenario 2: Course and Class Creation by Teacher
+**Objective:** Verify that a teacher can create courses and classes, and add details as required.
+
+**Preconditions:**
+- The teacher is logged in.
+- The teacher has access to the course creation page.
+
+**Steps:**
+1. Navigate to the course creation page.
+2. Enter a title and optionally upload an image for the course.
+3. Save the course.
+4. Open the newly created course.
+5. Navigate to the class creation section.
+6. Enter the title, description, date and time, invited students, and upload related files.
+7. Enable the forum for the class.
+8. Save the class.
+
+**Expected Results:**
+- The course is created and displayed in the teacher's dashboard.
+- The class is created with all details and appears under the correct course.
+
+### Test Scenario 3: Student Interaction with Courses and Classes
+**Objective:** Verify that students can interact with courses on their dashboard, view class details, download files, and add comments to the forum.
+
+**Preconditions:**
+- The student is logged in.
+- The student is enrolled in at least one course.
+
+**Steps:**
+1. Navigate to the student's dashboard.
+2. Select a course from the list of enrolled courses.
+3. View the list of classes ordered by date.
+4. Select a class and view its details.
+5. Download any attached files.
+6. If the forum is enabled, add a comment to the forum.
+
+**Expected Results:**
+- The student can see their enrolled courses and the classes within them.
+- The student can download files and add comments to the forum if enabled.
+
+### Test Scenario 4: Conducting a Class by Teacher
+**Objective:** Verify that the teacher can conduct classes, manage audio/video, view class information, and control student interventions.
+
+**Preconditions:**
+- The teacher is logged in.
+- The teacher has at least one class created.
+
+**Steps:**
+1. Navigate to the class that needs to be conducted.
+2. Start the class.
+3. Share/block audio and webcam.
+4. View class information, including title, duration, attendees, and intervention times.
+5. Communicate via chat with attendees.
+6. Pass intervention turn to students and revoke control when necessary.
+7. End the class.
+
+**Expected Results:**
+- The teacher can manage audio/video settings.
+- The teacher can see real-time class information and control student interventions.
+- The class can be ended successfully.
+
+### Test Scenario 5: Attending a Class by Student
+**Objective:** Verify that students can attend classes, view class details, and interact during the class.
+
+**Preconditions:**
+- The student is logged in.
+- The student is enrolled in a class that is about to start.
+
+**Steps:**
+1. Navigate to the student's dashboard.
+2. Select the class that the teacher has started.
+3. Enter the classroom.
+4. Receive the audio and video feed of the teacher.
+5. Mute the audio and video feed if needed.
+6. View class information, including title, duration, and attendees.
+7. Communicate via chat.
+8. Request an intervention turn and cancel it if needed.
+9. Share audio and webcam when given the intervention turn.
+
+**Expected Results:**
+- The student can join the class and receive the audio/video feed.
+- The student can mute/unmute the feed, view class information, and interact via chat.
+- The student can request and use the intervention turn when granted.
+
+### Test Scenario 6: Profile Modification by Users
+**Objective:** Verify that users can modify their profiles, including username, email, password, and profile image.
+
+**Preconditions:**
+- The user is logged in.
+
+**Steps:**
+1. Navigate to the profile settings page.
+2. Modify the username, email, password, and profile image.
+3. Save the changes.
+4. Log out and log back in to verify changes.
+
+**Expected Results:**
+- The user can successfully update their profile information.
+- Changes are reflected correctly upon logging back in.
