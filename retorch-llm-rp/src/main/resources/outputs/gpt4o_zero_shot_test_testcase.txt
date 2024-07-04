@@ -1,0 +1,24 @@
+### Test Scenario: Create an Entry in the Class Forum
+
+**Objective:** Verify the functionality of creating an entry in the class forum.
+
+**Steps:**
+1. Log in as a student.
+2. Navigate to the dashboard and select a course.
+3. Choose a class within the course that has the forum enabled.
+4. Navigate to the class forum section.
+5. Click on the option to create a new forum entry.
+6. Enter a title and content for the forum entry.
+7. Optionally, attach any files or links.
+8. Submit the forum entry.
+9. Verify the forum entry appears in the list of forum posts.
+10. Log out and log back in as a different student enrolled in the same class.
+11. Navigate to the class forum section.
+12. Verify that the newly created forum entry is visible and accessible.
+13. Add a comment to the forum entry to test interaction.
+
+**Expected Results:**
+- The student can successfully navigate to the class forum and create a new forum entry.
+- The forum entry appears immediately in the list of forum posts.
+- Other students enrolled in the class can view and interact with the new forum entry.
+- The comment functionality on the forum entry works as expected.
