@@ -16,9 +16,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class GPTHelper {
+    static final String PATH_KEY = "CHATGPT_API_KEY";
     private final Logger log = LoggerFactory.getLogger(this.getClass());
-    static final String PATH_KEY="CHATGPT_API_KEY";
-    public void sendChatGPTRequest(String body) {
+
+    public void sendChatGPTRequest(String body, String model) {
 
         String apiKey = System.getProperty(PATH_KEY) != null ? System.getProperty(PATH_KEY) : System.getenv(PATH_KEY);
         String urlString = "https://api.openai.com/v1/chat/completions";
@@ -36,7 +37,7 @@ public class GPTHelper {
 
             // Create JSON request body
             JSONObject data = new JSONObject();
-            data.put("model", "gpt-3.5-turbo");
+            data.put("model", model);
 
             // Create the message content
             JSONObject messageContent = new JSONObject();
@@ -53,7 +54,6 @@ public class GPTHelper {
             messages.put(userMessage);
 
             // Create JSON request body
-            data.put("model", "gpt-3.5-turbo");
             data.put("messages", new org.json.JSONArray());
             data.put("temperature", 1);
             data.put("max_tokens", 256);

@@ -9,12 +9,11 @@ import java.io.IOException;
 
 public class ExperimentationMainClass {
     private static final Logger log = LoggerFactory.getLogger(ExperimentationMainClass.class);
-    ExperimentationHelper exhelper;
-    GPTHelper gptHelper;
+    static ExperimentationHelper exhelper;
+    static GPTHelper gptHelper;
 
     public ExperimentationMainClass() {
-        exhelper = new ExperimentationHelper();
-        gptHelper = new GPTHelper();
+
     }
 
     public static void putOutputToFile(String filePath, String namePrompt, String output) throws IOException {

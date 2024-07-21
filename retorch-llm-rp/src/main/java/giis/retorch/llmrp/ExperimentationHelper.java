@@ -5,6 +5,9 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ExperimentationHelper {
 
@@ -12,8 +15,12 @@ public class ExperimentationHelper {
         //This is the default constructor to avoid smells
     }
 
-    public String getTestCases() throws IOException {
-        return openFileLoadContent("retorch-llm-rp/src/main/resources/input/SystemTestCases.txt");
+    public String getTestCasesCrossValidation(int pos) throws IOException {
+        String[] rawTestCases = openFileLoadContent("retorch-llm-rp/src/main/resources/input/SystemTestCases.txt").split("//TC");
+        List<String> contentList = new ArrayList<>(Arrays.asList(rawTestCases));
+        contentList.remove(pos);
+
+        return String.join("", contentList);
     }
 
     public String openFileLoadContent(String route) throws IOException {

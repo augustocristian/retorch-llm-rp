@@ -1,105 +1,242 @@
-### Test Scenario 1: User Registration and Login
-**Objective:** Verify the registration and login functionalities.
+### Objective 1: Viewing Enrolled Courses
+**Scenario: User views the courses they are enrolled in.**
 
 **Steps:**
-1. Attempt to register a new user with a valid email and password.
-2. Ensure CAPTCHA is presented and can be completed.
-3. Verify the system sends a registration confirmation email.
-4. Attempt to log in with the registered credentials.
-5. Verify the user is redirected to their dashboard upon successful login.
-6. Attempt to log in with incorrect credentials and ensure the system denies access.
+1. User logs in to the application.
+2. User navigates to their dashboard.
+3. System displays the list of courses the user is enrolled in.
 
-**Expected Results:**
-- User is registered successfully.
-- CAPTCHA is required and functional.
-- Confirmation email is sent.
-- User can log in with valid credentials.
-- System denies access with incorrect credentials.
+**Expected Output:**
+- User sees a list of all courses they are enrolled in on their dashboard.
 
-### Test Scenario 2: Course Creation and Management by Teacher
-**Objective:** Verify the teacher's ability to create and manage courses.
+---
+
+### Objective 2: Accessing and Viewing Classes within a Course
+**Scenario: User accesses a course and views the classes ordered by date.**
 
 **Steps:**
-1. Log in as a teacher.
-2. Navigate to the course creation page.
-3. Create a course with a title and an optional image.
-4. Verify the course appears on the teacher’s dashboard.
-5. Edit the course title and description, including text formatting, images, and links.
-6. Add students to the course using their email addresses, multiple emails, and file upload.
-7. Verify students are added successfully.
+1. User logs in to the application.
+2. User navigates to their dashboard.
+3. User selects a course from the list of enrolled courses.
+4. System displays the classes within the selected course, ordered by date.
 
-**Expected Results:**
-- Course is created and appears on the dashboard.
-- Teacher can edit course attributes.
-- Teacher can add students in various ways.
+**Expected Output:**
+- User sees the list of classes within the selected course, ordered by date.
 
-### Test Scenario 3: Class Creation and Management by Teacher
-**Objective:** Verify the teacher's ability to create and manage classes within a course.
+---
+
+### Objective 3: Creating a Course (Teacher)
+**Scenario: Teacher creates a new course with a title and an optional image.**
 
 **Steps:**
-1. Log in as a teacher.
-2. Select an existing course.
-3. Create a class with a title, description, date, time, invited students, related files, and enabled forum.
-4. Verify the class appears within the course, ordered by date.
-5. Edit the class details.
-6. Start the class and use functionalities: share/block audio and webcam, view class information, communicate via chat, manage intervention turns, and end the class.
+1. Teacher logs in to the application.
+2. Teacher navigates to the course creation section.
+3. Teacher enters the course title and uploads an optional image.
+4. Teacher submits the form to create the course.
+5. System creates the course and displays it in the teacher's course list.
 
-**Expected Results:**
-- Class is created and listed within the course.
-- Teacher can edit class details.
-- Teacher can start, manage, and end the class with all functionalities working correctly.
+**Expected Output:**
+- New course appears in the teacher's course list with the provided title and image.
 
-### Test Scenario 4: Student Interaction with Courses and Classes
-**Objective:** Verify the student’s ability to interact with courses and classes.
+---
 
-**Steps:**
-1. Log in as a student.
-2. Navigate to the dashboard and view enrolled courses.
-3. Select a course and view associated classes ordered by date.
-4. Join a class started by the teacher.
-5. Interact with class features: receive/mute audio and video, view class information, communicate via chat, request and cancel intervention turns, and share audio and webcam upon granted intervention.
-6. Add comments to the forum if enabled and download attached files.
-
-**Expected Results:**
-- Student can view enrolled courses and associated classes.
-- Student can join and interact with classes.
-- Student can add forum comments and download files.
-
-### Test Scenario 5: Profile Management
-**Objective:** Verify user profile management.
+### Objective 4: Creating a New Class within a Course (Teacher)
+**Scenario: Teacher creates a new class within a course and provides all necessary details.**
 
 **Steps:**
-1. Log in as any user (teacher or student).
-2. Navigate to the profile settings.
-3. Modify username, email, password, and profile image.
-4. Save changes and log out.
-5. Log in with the updated credentials and verify changes.
+1. Teacher logs in to the application.
+2. Teacher selects a course from their course list.
+3. Teacher navigates to the class creation section within the selected course.
+4. Teacher enters the class title, description, date and time, invited students, uploads related files, and enables the forum.
+5. Teacher submits the form to create the class.
+6. System creates the class and displays it in the course’s class list.
 
-**Expected Results:**
-- User can modify and save profile information.
-- Changes persist after logging out and back in.
+**Expected Output:**
+- New class appears in the selected course’s class list with all provided details.
 
-### Test Scenario 6: Calendar Functionality
-**Objective:** Verify the calendar functionality for displaying classes.
+---
 
-**Steps:**
-1. Log in as any user (teacher or student).
-2. Navigate to the calendar view.
-3. Verify all classes the user is enrolled in are displayed with correct details (title, date, time).
-4. Check if classes are updated in real-time when modifications are made.
-
-**Expected Results:**
-- Calendar displays all classes with correct details.
-- Calendar updates in real-time with modifications.
-
-### Test Scenario 7: CAPTCHA Verification
-**Objective:** Verify CAPTCHA functionality during registration.
+### Objective 5: Interacting with Courses on the Dashboard (Student)
+**Scenario: Student interacts with courses on their dashboard.**
 
 **Steps:**
-1. Attempt to register a new user without completing the CAPTCHA.
-2. Verify the system does not allow registration without CAPTCHA completion.
-3. Complete the CAPTCHA and attempt registration again.
+1. Student logs in to the application.
+2. Student navigates to their dashboard.
+3. Student selects a course from the list of enrolled courses.
+4. Student views the course information, adds comments to the forum (if enabled), and downloads attached files (if available).
 
-**Expected Results:**
-- Registration is not allowed without CAPTCHA completion.
-- Registration is successful with CAPTCHA completion.
+**Expected Output:**
+- Student can see course information, add comments to the forum, and download attached files.
+
+---
+
+### Objective 6: Conducting Classes (Teacher)
+**Scenario: Teacher conducts a class and manages various functionalities.**
+
+**Steps:**
+1. Teacher logs in to the application.
+2. Teacher starts a class.
+3. Teacher shares or blocks audio and webcam as needed.
+4. Teacher views class information, including title, duration, attendees, and intervention times.
+5. Teacher communicates via chat.
+6. Teacher passes and revokes intervention turns to/from students.
+7. Teacher ends the class.
+
+**Expected Output:**
+- Teacher successfully manages all aspects of the class and ends the class.
+
+---
+
+### Objective 7: Attending Classes (Student)
+**Scenario: Student attends a class and utilizes available features.**
+
+**Steps:**
+1. Student logs in to the application.
+2. Student enters the classroom once the teacher has started it.
+3. Student receives and mutes/unmutes audio and video feed of the teacher.
+4. Student views class information, including title, duration, and attendees.
+5. Student communicates via chat.
+6. Student requests and cancels intervention turns.
+7. Student shares their audio and webcam if their speaking request is granted.
+
+**Expected Output:**
+- Student attends the class and uses all available features.
+
+---
+
+### Objective 8: User Registration
+**Scenario: User registers using their email.**
+
+**Steps:**
+1. User navigates to the registration page.
+2. User fills in registration details including email.
+3. User completes CAPTCHA.
+4. User submits the registration form.
+5. System creates the user account and sends a confirmation email.
+
+**Expected Output:**
+- User account is created, and a confirmation email is sent.
+
+---
+
+### Objective 9: User Login
+**Scenario: User logs in to the application.**
+
+**Steps:**
+1. User navigates to the login page.
+2. User enters their email and password.
+3. User submits the login form.
+4. System authenticates the user and redirects them to their dashboard.
+
+**Expected Output:**
+- User is logged in and redirected to their dashboard.
+
+---
+
+### Objective 10: Editing Course Attributes (Teacher)
+**Scenario: Teacher edits the attributes of a course.**
+
+**Steps:**
+1. Teacher logs in to the application.
+2. Teacher selects a course from their course list.
+3. Teacher navigates to the course editing section.
+4. Teacher updates the course attributes (title, image, description, etc.).
+5. Teacher submits the changes.
+6. System updates the course with the new attributes.
+
+**Expected Output:**
+- Course attributes are updated and reflected in the course list.
+
+---
+
+### Objective 11: Editing Class Attributes (Teacher)
+**Scenario: Teacher edits the attributes of a class.**
+
+**Steps:**
+1. Teacher logs in to the application.
+2. Teacher selects a course from their course list.
+3. Teacher selects a class within the course.
+4. Teacher navigates to the class editing section.
+5. Teacher updates the class attributes (title, description, date, etc.).
+6. Teacher submits the changes.
+7. System updates the class with the new attributes.
+
+**Expected Output:**
+- Class attributes are updated and reflected in the class list.
+
+---
+
+### Objective 12: Modifying User Profile
+**Scenario: User modifies their profile information.**
+
+**Steps:**
+1. User logs in to the application.
+2. User navigates to their profile section.
+3. User updates their username, email, password, and profile image.
+4. User submits the changes.
+5. System updates the user's profile with the new information.
+
+**Expected Output:**
+- User's profile is updated with the new information.
+
+---
+
+### Objective 13: Adding Course Description (Teacher)
+**Scenario: Teacher adds a description to a course with text, images, and links.**
+
+**Steps:**
+1. Teacher logs in to the application.
+2. Teacher selects a course from their course list.
+3. Teacher navigates to the course editing section.
+4. Teacher adds or updates the course description with formatted text, images, and links.
+5. Teacher submits the changes.
+6. System updates the course description.
+
+**Expected Output:**
+- Course description is updated with the new content.
+
+---
+
+### Objective 14: CAPTCHA During Registration
+**Scenario: User completes CAPTCHA during registration.**
+
+**Steps:**
+1. User navigates to the registration page.
+2. User fills in registration details including email.
+3. User completes CAPTCHA.
+4. User submits the registration form.
+5. System verifies CAPTCHA and creates the user account.
+
+**Expected Output:**
+- User account is created after CAPTCHA verification.
+
+---
+
+### Objective 15: Viewing Calendar with Classes
+**Scenario: User views their calendar displaying all classes.**
+
+**Steps:**
+1. User logs in to the application.
+2. User navigates to the calendar section.
+3. System displays all classes the user is enrolled in on the calendar.
+
+**Expected Output:**
+- User sees all their classes displayed on the calendar.
+
+---
+
+### Objective 16: Adding Students to a Course (Teacher)
+**Scenario: Teacher adds students to a course using various methods.**
+
+**Steps:**
+1. Teacher logs in to the application.
+2. Teacher selects a course from their course list.
+3. Teacher navigates to the student management section.
+4. Teacher adds students using their unique email address, multiple email addresses, or a file (txt, excel, Word, PDF).
+5. Teacher submits the additions.
+6. System adds the students to the course.
+
+**Expected Output:**
+- Students are added to the course using the provided methods.
+
+---
