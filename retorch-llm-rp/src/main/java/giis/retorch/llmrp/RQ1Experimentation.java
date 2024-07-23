@@ -14,8 +14,9 @@ public class RQ1Experimentation extends ExperimentationMainClass {
         gptHelper = new GPTHelper();
         String prompt = promptTestScenariosFewShot(exhelper.getUserStories(), exhelper.getUserStoriesExamples());
         putOutputToFile(getOutBasePath(), "few-shot-prompt", prompt);
-        gptHelper.sendChatGPTRequest(prompt,"gpt-4o-mini-2024-07-18","RQ1-few-shot-generatescenarios");
         gptHelper.sendChatGPTRequest(prompt,"gpt-4o-2024-05-13","RQ1-few-shot-generatescenarios");
+        gptHelper.sendChatGPTRequest(prompt,"gpt-4o-mini-2024-07-18","RQ1-few-shot-generatescenarios");
+
         log.debug("The prompt for FewShot is: {}", prompt);
 
         prompt = promptTestScenariosFewShotCoT(exhelper.getUserStories(), exhelper.getUserStoriesExamples());

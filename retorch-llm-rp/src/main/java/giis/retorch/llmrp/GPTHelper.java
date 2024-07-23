@@ -23,15 +23,16 @@ public class GPTHelper {
     static final String PATH_KEY = "CHATGPT_API_KEY";
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
-    public void sendChatGPTRequest(String body, String model,String experimentname) {
+    public void sendChatGPTRequest(String body, String model, String experimentname) {
 
         String apiKey = System.getProperty(PATH_KEY) != null ? System.getProperty(PATH_KEY) : System.getenv(PATH_KEY);
         String urlString = "https://api.openai.com/v1/chat/completions";
+        HttpURLConnection conn = null;
         try {
             // Create URL and HttpURLConnection objects
             URI uri = new URI(urlString);
             URL url = uri.toURL();
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn = (HttpURLConnection) url.openConnection();
 
             // Set request method and headers
             conn.setRequestMethod("POST");
@@ -50,6 +51,8 @@ public class GPTHelper {
 
             // Create the user message
             JSONObject userMessage = new JSONObject();
+
+
             userMessage.put("role", "user");
             userMessage.put("content", new JSONArray().put(messageContent));
 
@@ -86,17 +89,21 @@ public class GPTHelper {
                 // Format the current date and time
                 String formattedDateTime = now.format(formatter);
 
-
-                putOutputToFile("retorch-llm-rp/src/main/resources/outputs",experimentname+model+formattedDateTime,responseBody);
+                putOutputToFile("retorch-llm-rp/src/main/resources/outputs", experimentname + model + formattedDateTime, responseBody);
+                conn.disconnect();
             }
 
         } catch (IOException | URISyntaxException e) {
-            log.error(Arrays.toString(e.getStackTrace()));
+            log.error(e.getMessage().toString());
+            if (conn != null) {
+                conn.disconnect();
+            }
             System.exit(-1);
         }
 
     }
-    public  void putOutputToFile(String filePath, String namePrompt, String output) throws IOException {
+
+    public void putOutputToFile(String filePath, String namePrompt, String output) throws IOException {
         log.debug("Creating the tmp directory to store methods output");
         File dir = new File(filePath);
         if (dir.exists()) {
