@@ -18,27 +18,35 @@ public class RQ2Experimentation extends ExperimentationMainClass {
                 "user reply to a Forum comment",
                 "user create an entry in the Forum"
         };
-
+        //GPT4o mini
         // Process Few-Shot Prompts
-        processFewShotPrompts(exhelper, testCases, false);
+        processPrompts(exhelper, testCases, false,"RQ2-few-shot","gpt-4o-mini-2024-07-18");
 
         // Process Few-Shot CoT Prompts
-        processFewShotPrompts(exhelper, testCases, true);
+        processPrompts(exhelper, testCases, true,"RQ2-few-shot-cot","gpt-4o-mini-2024-07-18");
+        //GPT4o
+        // Process Few-Shot Prompts
+        processPrompts(exhelper, testCases, false,"RQ2-few-shot","gpt-4o-2024-05-13");
+
+        // Process Few-Shot CoT Prompts
+        processPrompts(exhelper, testCases, true,"RQ2-few-shot-cot","gpt-4o-2024-05-13");
+
     }
 
-    private static void processFewShotPrompts(ExperimentationHelper exhelper, String[] testCases, boolean isCot) throws IOException {
+    private static void processPrompts(ExperimentationHelper exHelper, String[] testCases, boolean isCot, String expName, String model) throws IOException {
         for (int i = 0; i < testCases.length; i++) {
             String testCaseRequired = testCases[i];
             String prompt;
+
             if (isCot) {
-                prompt = promptTestCasesFewShotCoT(exhelper.getTestScenarios(), exhelper.getTestCasesCrossValidation(i + 1), testCaseRequired);
+                prompt = promptTestCasesFewShotCoT(exHelper.getTestScenarios(), exHelper.getTestCasesCrossValidation(i + 1), testCaseRequired);
             } else {
-                prompt = promptTestCasesFewShot(exhelper.getTestScenarios(), exhelper.getTestCasesCrossValidation(i + 1), testCaseRequired);
+                prompt = promptTestCasesFewShot(exHelper.getTestScenarios(), exHelper.getTestCasesCrossValidation(i + 1), testCaseRequired);
             }
             putOutputToFile(getOutBasePath(), (isCot ? "few-shot-prompt-cot-" : "few-shot-prompt-") + testCaseRequired, prompt);
             log.debug("The prompt for FewShot {} is: {}", (isCot ? " COT" : ""), prompt);
             // Uncomment the next line to send the prompt to ChatGPT
-            gptHelper.sendChatGPTRequest(prompt,"gpt-3.5-turbo");
+            gptHelper.sendChatGPTRequest(prompt,model,expName+"-"+testCaseRequired);
         }
     }
 
