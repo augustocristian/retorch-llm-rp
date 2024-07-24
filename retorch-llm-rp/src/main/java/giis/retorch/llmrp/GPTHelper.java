@@ -5,10 +5,7 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -23,7 +20,7 @@ public class GPTHelper {
     static final String PATH_KEY = "CHATGPT_API_KEY";
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
-    public void sendChatGPTRequest(String body, String model, String experimentname) {
+    public void sendChatGPTRequest(String body, String model, String experimentname) throws IOException {
 
         String apiKey = System.getProperty(PATH_KEY) != null ? System.getProperty(PATH_KEY) : System.getenv(PATH_KEY);
         String urlString = "https://api.openai.com/v1/chat/completions";
@@ -63,7 +60,7 @@ public class GPTHelper {
             // Create JSON request body
             data.put("messages", messages);
             data.put("temperature", 0.2); // More info at: https://community.openai.com/t/cheat-sheet-mastering-temperature-and-top-p-in-chatgpt-api/172683
-            data.put("max_tokens", 5000); // Upper limit for the anwer.
+            data.put("max_tokens", 4000); // Upper limit for the anwer.
             data.put("top_p", 1);
             data.put("frequency_penalty", 0);
             data.put("presence_penalty", 0);
@@ -89,14 +86,20 @@ public class GPTHelper {
                 // Format the current date and time
                 String formattedDateTime = now.format(formatter);
 
-                putOutputToFile("retorch-llm-rp/src/main/resources/outputs", experimentname + model + formattedDateTime, responseBody);
+                putOutputToFile("retorch-llm-rp/src/main/resources/outputs", experimentname +"-"+ model +"-"+ formattedDateTime, responseBody);
                 conn.disconnect();
             }
 
         } catch (IOException | URISyntaxException e) {
+
             log.error(e.getMessage().toString());
+
+
             if (conn != null) {
-                conn.disconnect();
+
+               log.error(conn.getErrorStream().toString());
+               log.error("The response was {}",getErrorResponse(conn.getErrorStream()));
+               conn.disconnect();
             }
             System.exit(-1);
         }
@@ -125,5 +128,17 @@ public class GPTHelper {
             byte[] strToBytes = output.getBytes();
             outputStream.write(strToBytes);
         }
+    }
+
+    public String getErrorResponse(InputStream i) throws IOException {
+        String res = "";
+        InputStreamReader in = new InputStreamReader(i);
+        BufferedReader br = new BufferedReader(in);
+        String output;
+        while ((output = br.readLine()) != null) {
+            res += (output);
+        }
+
+        return res;
     }
 }

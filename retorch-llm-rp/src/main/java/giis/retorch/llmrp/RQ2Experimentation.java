@@ -12,24 +12,19 @@ public class RQ2Experimentation extends ExperimentationMainClass {
     public static void main(String[] args) throws IOException {
         exhelper = new ExperimentationHelper();
         gptHelper = new GPTHelper();
-        String[] testCases = {
-                "user load Forum entries",
-                "user create new comment in the Forum",
-                "user reply to a Forum comment",
-                "user create an entry in the Forum"
-        };
+        String[] testCases = {"user load Forum entries", "user create new comment in the Forum", "user reply to a Forum comment", "user create an entry in the Forum"};
         //GPT4o mini
         // Process Few-Shot Prompts
-        processPrompts(exhelper, testCases, false,"RQ2-few-shot","gpt-4o-mini-2024-07-18");
+        processPrompts(exhelper, testCases, false, "RQ2-few-shot", "gpt-4o-mini-2024-07-18");
 
         // Process Few-Shot CoT Prompts
-        processPrompts(exhelper, testCases, true,"RQ2-few-shot-cot","gpt-4o-mini-2024-07-18");
+        processPrompts(exhelper, testCases, true, "RQ2-few-shot-cot", "gpt-4o-mini-2024-07-18");
         //GPT4o
         // Process Few-Shot Prompts
-        processPrompts(exhelper, testCases, false,"RQ2-few-shot","gpt-4o-2024-05-13");
+        processPrompts(exhelper, testCases, false, "RQ2-few-shot", "gpt-4o-2024-05-13");
 
         // Process Few-Shot CoT Prompts
-        processPrompts(exhelper, testCases, true,"RQ2-few-shot-cot","gpt-4o-2024-05-13");
+        processPrompts(exhelper, testCases, true, "RQ2-few-shot-cot", "gpt-4o-2024-05-13");
 
     }
 
@@ -46,7 +41,7 @@ public class RQ2Experimentation extends ExperimentationMainClass {
             putOutputToFile(getOutBasePath(), (isCot ? "few-shot-prompt-cot-" : "few-shot-prompt-") + testCaseRequired, prompt);
             log.debug("The prompt for FewShot {} is: {}", (isCot ? " COT" : ""), prompt);
             // Uncomment the next line to send the prompt to ChatGPT
-            gptHelper.sendChatGPTRequest(prompt,model,expName+"-"+testCaseRequired);
+            gptHelper.sendChatGPTRequest(prompt, model, expName + "-" + testCaseRequired);
         }
     }
 
