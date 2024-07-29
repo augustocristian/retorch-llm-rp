@@ -1,8 +1,300 @@
 # RQ1 Test Scenarios Generation GPT 4o Few-Shot + CoT
 ### Most consistent Execution
+
+### Summary
+| Number of Scenarios | % Coverage |
+|---------------------|------------|
+| 15                  | 100 %      |
+
+### Scenarios Generated:
+
 ```markdown
-Example
+### Test Scenario 1: Viewing Enrolled Courses
+**Objective:** Verify that all users can see the courses they are enrolled in.
+
+**Steps:**
+1. User logs into the application.
+2. User navigates to the dashboard.
+3. System displays a list of courses the user is enrolled in.
+
+**Expected Output:**
+- The dashboard shows a list of courses the user is enrolled in.
+
+**User Requirements Covered:** (1)
+
+### Test Scenario 2: Accessing Courses and Viewing Classes
+**Objective:** Verify that all users can access any of the courses and see the classes ordered by date.
+
+**Steps:**
+1. User logs into the application.
+2. User navigates to the dashboard.
+3. User clicks on a course.
+4. System displays the classes within the course, ordered by date.
+
+**Expected Output:**
+- The course page shows a list of classes ordered by date.
+
+**User Requirements Covered:** (2)
+
+### Test Scenario 3: Teacher Creating a Course
+**Objective:** Verify that the teacher can create courses with a title and an optional image.
+
+**Steps:**
+1. Teacher logs into the application.
+2. Teacher navigates to the course creation page.
+3. Teacher enters a course title.
+4. Teacher optionally uploads an image.
+5. Teacher clicks on the "Create Course" button.
+6. System creates the course and displays it in the teacher's dashboard.
+
+**Expected Output:**
+- The new course appears in the teacher's dashboard with the provided title and image.
+
+**User Requirements Covered:** (3)
+
+### Test Scenario 4: Teacher Creating a Class within a Course
+**Objective:** Verify that the teacher can create a new class within a course with all specified attributes.
+
+**Steps:**
+1. Teacher logs into the application.
+2. Teacher navigates to the course page.
+3. Teacher clicks on "Create New Class."
+4. Teacher enters the class title, description, date, and time.
+5. Teacher selects invited students.
+6. Teacher uploads related files.
+7. Teacher enables the forum for the class.
+8. Teacher clicks on "Create Class."
+9. System creates the class and displays it within the course.
+
+**Expected Output:**
+- The new class appears within the course with all provided attributes.
+
+**User Requirements Covered:** (4)
+
+### Test Scenario 5: Student Interacting with Courses on Dashboard
+**Objective:** Verify that students can interact with courses on their dashboard.
+
+**Steps:**
+1. Student logs into the application.
+2. Student navigates to the dashboard.
+3. Student clicks on a course.
+4. System displays the course information.
+5. Student adds a comment to the forum (if enabled).
+6. Student downloads attached files (if they exist).
+
+**Expected Output:**
+- The course information is displayed.
+- The comment is added to the forum.
+- The files are downloaded successfully.
+
+**User Requirements Covered:** (5)
+
+### Test Scenario 6: Teacher Conducting Classes
+**Objective:** Verify that the teacher can conduct classes with all specified functionalities.
+
+**Steps:**
+1. Teacher logs into the application.
+2. Teacher navigates to the class page.
+3. Teacher clicks on "Start Class."
+4. Teacher shares/blocks audio and webcam.
+5. Teacher views class information.
+6. Teacher communicates via chat.
+7. Teacher passes/revokes intervention turn to/from students.
+8. Teacher ends the class.
+
+**Expected Output:**
+- The class starts, and all functionalities work as expected.
+
+**User Requirements Covered:** (6)
+
+### Test Scenario 7: Student Attending Classes
+**Objective:** Verify that students can attend classes with all specified functionalities.
+
+**Steps:**
+1. Student logs into the application.
+2. Student navigates to the class page.
+3. Student enters the classroom when the teacher has started it.
+4. Student receives the audio and video feed of the teacher.
+5. Student mutes the audio and video feed of the teacher.
+6. Student views class information.
+7. Student communicates via chat.
+8. Student asks for/cancels an intervention turn.
+9. Student shares their audio and webcam if their speaking request is granted.
+
+**Expected Output:**
+- The student can attend the class and all functionalities work as expected.
+
+**User Requirements Covered:** (7)
+
+### Test Scenario 8: User Registration
+**Objective:** Verify that users can register using their email and pass a CAPTCHA.
+
+**Steps:**
+1. User navigates to the registration page.
+2. User enters their email and other required information.
+3. User completes the CAPTCHA.
+4. User clicks on "Register."
+5. System registers the user and sends a confirmation email.
+
+**Expected Output:**
+- The user is registered, and a confirmation email is sent.
+
+**User Requirements Covered:** (8), (14)
+
+### Test Scenario 9: User Login
+**Objective:** Verify that users can log in to the application.
+
+**Steps:**
+1. User navigates to the login page.
+2. User enters their email and password.
+3. User clicks on "Login."
+4. System logs the user in and redirects to the dashboard.
+
+**Expected Output:**
+- The user is logged in and redirected to the dashboard.
+
+**User Requirements Covered:** (9)
+
+### Test Scenario 10: Teacher Editing Course Attributes
+**Objective:** Verify that the teacher can edit the attributes of a course at any time.
+
+**Steps:**
+1. Teacher logs into the application.
+2. Teacher navigates to the course page.
+3. Teacher clicks on "Edit Course."
+4. Teacher updates the course attributes.
+5. Teacher clicks on "Save Changes."
+6. System updates the course attributes.
+
+**Expected Output:**
+- The course attributes are updated successfully.
+
+**User Requirements Covered:** (10)
+
+### Test Scenario 11: Teacher Editing Class Attributes
+**Objective:** Verify that the teacher can edit the attributes of a class at any time.
+
+**Steps:**
+1. Teacher logs into the application.
+2. Teacher navigates to the class page.
+3. Teacher clicks on "Edit Class."
+4. Teacher updates the class attributes.
+5. Teacher clicks on "Save Changes."
+6. System updates the class attributes.
+
+**Expected Output:**
+- The class attributes are updated successfully.
+
+**User Requirements Covered:** (11)
+
+### Test Scenario 12: User Modifying Profile
+**Objective:** Verify that users can modify their profiles.
+
+**Steps:**
+1. User logs into the application.
+2. User navigates to the profile page.
+3. User updates their username, email, password, and profile image.
+4. User clicks on "Save Changes."
+5. System updates the user's profile.
+
+**Expected Output:**
+- The user's profile is updated successfully.
+
+**User Requirements Covered:** (12)
+
+### Test Scenario 13: Teacher Adding Course Description
+**Objective:** Verify that the teacher can add a description to the courses.
+
+**Steps:**
+1. Teacher logs into the application.
+2. Teacher navigates to the course page.
+3. Teacher clicks on "Edit Course."
+4. Teacher adds a description with text, images, and links.
+5. Teacher clicks on "Save Changes."
+6. System updates the course description.
+
+**Expected Output:**
+- The course description is updated successfully.
+
+**User Requirements Covered:** (13)
+
+### Test Scenario 14: User Accessing Calendar
+**Objective:** Verify that all users have access to a calendar displaying all their classes.
+
+**Steps:**
+1. User logs into the application.
+2. User navigates to the calendar page.
+3. System displays a calendar with all the user's classes.
+
+**Expected Output:**
+- The calendar displays all the user's classes.
+
+**User Requirements Covered:** (15)
+
+### Test Scenario 15: Teacher Adding Students to a Course
+**Objective:** Verify that the teacher can add students to a course using different methods.
+
+**Steps:**
+1. Teacher logs into the application.
+2. Teacher navigates to the course page.
+3. Teacher clicks on "Add Students."
+4. Teacher adds students using their unique email address.
+5. Teacher adds students using multiple email addresses.
+6. Teacher uploads a file (txt, excel, Word, PDF) with student information.
+7. Teacher clicks on "Add."
+8. System adds the students to the course.
+
+**Expected Output:**
+- The students are added to the course successfully.
+
+**User Requirements Covered:** (16)
+
 ```
+
+### User Requirements Coverage Matrix
+
+| User Requirement | Scenario 1 | Scenario 2 | Scenario 3 | Scenario 4 | Scenario 5 | Scenario 6 | Scenario 7 | Scenario 8 | Scenario 9 | Scenario 10 | Scenario 11 | Scenario 12 | Scenario 13 | Scenario 14 | Scenario 15 |
+|------------------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
+| 1                |     X      |            |            |            |            |            |            |            |            |             |             |             |             |             |             |
+| 2                |     X      |     X      |            |            |            |            |            |            |            |             |             |             |             |             |             | 
+| 3                |            |            |     X      |            |            |            |            |            |            |             |             |             |             |             |             |
+| 4.1              |            |            |            |     X      |            |            |            |            |            |             |             |             |             |             |             |
+| 4.2              |            |            |            |     X      |            |            |            |            |            |             |             |             |             |             |             | 
+| 4.3              |            |            |            |     X      |            |            |            |            |            |             |             |             |             |             |             | 
+| 4.4              |            |            |            |     X      |            |            |            |            |            |             |             |             |             |             |             | 
+| 4.5              |            |            |            |     X      |            |            |            |            |            |             |             |             |             |             |             | 
+| 4.6              |            |            |            |     X      |            |            |            |            |            |             |             |             |             |             |             |
+| 5.1              |            |            |            |            |     X      |            |            |            |            |             |             |             |             |             |             | 
+| 5.2              |            |            |            |            |     X      |            |            |            |            |             |             |             |             |             |             | 
+| 5.3              |            |            |            |            |     X      |            |            |            |            |             |             |             |             |             |             | 
+| 6.1              |            |            |            |            |            |     X      |            |            |            |             |             |             |             |             |             | 
+| 6.2              |            |            |            |            |            |     X      |            |            |            |             |             |             |             |             |             | 
+| 6.3              |            |            |            |            |            |     X      |            |            |            |             |             |             |             |             |             | 
+| 6.4              |            |            |            |            |            |     X      |            |            |            |             |             |             |             |             |             | 
+| 6.5              |            |            |            |            |            |     X      |            |            |            |             |             |             |             |             |             | 
+| 6.6              |            |            |            |            |            |     X      |            |            |            |             |             |             |             |             |             | 
+| 6.7              |            |            |            |            |            |     X      |            |            |            |             |             |             |             |             |             | 
+| 6.8              |            |            |            |            |            |     X      |            |            |            |             |             |             |             |             |             | 
+| 7.1              |            |            |            |            |            |            |     X      |            |            |             |             |             |             |             |             | 
+| 7.2              |            |            |            |            |            |            |     X      |            |            |             |             |             |             |             |             | 
+| 7.3              |            |            |            |            |            |            |     X      |            |            |             |             |             |             |             |             | 
+| 7.4              |            |            |            |            |            |            |     X      |            |            |             |             |             |             |             |             | 
+| 7.5              |            |            |            |            |            |            |     X      |            |            |             |             |             |             |             |             | 
+| 7.6              |            |            |            |            |            |            |     X      |            |            |             |             |             |             |             |             | 
+| 7.7              |            |            |            |            |            |            |     X      |            |            |             |             |             |             |             |             | 
+| 7.8              |            |            |            |            |            |            |     X      |            |            |             |             |             |             |             |             | 
+| 8                |            |            |            |            |            |            |            |     X      |            |             |             |             |             |             |             | 
+| 9                |     X      |     X      |     X      |     X      |     X      |     X      |     X      |            |     X      |      X      |      X      |      X      |      X      |      X      |             | 
+| 10               |            |            |            |            |            |            |            |            |            |      X      |             |             |             |             |             | 
+| 11               |            |            |            |            |            |            |            |            |            |             |      X      |             |             |             |             | 
+| 12               |            |            |            |            |            |            |            |            |            |             |             |      X      |             |             |             | 
+| 13               |            |            |            |            |            |            |            |            |            |             |             |             |      X      |             |             | 
+| 14               |            |            |            |            |            |            |            |     X      |            |             |             |             |             |             |             |
+| 16.1             |            |            |            |            |            |            |            |            |            |             |             |             |             |             |      X      | 
+| 16.2             |            |            |            |            |            |            |            |            |            |             |             |             |             |             |      X      | 
+| 16.3             |            |            |            |            |            |            |            |            |            |             |             |             |             |             |      X      | 
+
+
 ### Execution 1
 ```markdown
 ### Test Scenario 1: Viewing Enrolled Courses

@@ -12,7 +12,7 @@ public class RQ2Experimentation extends ExperimentationMainClass {
     public static void main(String[] args) throws IOException {
         exhelper = new ExperimentationHelper();
         gptHelper = new GPTHelper();
-        String[] testCases = {"user load Forum entries", "user create new comment in the Forum", "user reply to a Forum comment", "user create an entry in the Forum"};
+        String[] testCases = {"user view enrolled courses", "user access courses and view classes", "teacher creates a course", "user can access and view the calendar"};
         //GPT4o mini
         // Process Few-Shot Prompts
         processPrompts(exhelper, testCases, false, "RQ2-few-shot", "gpt-4o-mini-2024-07-18");
