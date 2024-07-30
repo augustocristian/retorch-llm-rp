@@ -5,25 +5,24 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
-public class RQ1Experimentation extends ExperimentationMainClass {
+public class RQ1Experimentation {
     private static final Logger log = LoggerFactory.getLogger(RQ1Experimentation.class);
     private static final String OUT_BASE_PATH = "retorch-llm-rp/target/prompts-input/RQ1";
-
+    static ExperimentationHelper exhelper;
     public static void main(String[] args) throws IOException {
         exhelper = new ExperimentationHelper();
-        gptHelper = new GPTHelper();
-        String prompt = promptTestScenariosFewShot(exhelper.getUserStories(), exhelper.getUserStoriesExamples());
-        putOutputToFile(getOutBasePath(), "few-shot-prompt", prompt);
-        gptHelper.sendChatGPTRequest(prompt,"gpt-4o-2024-05-13","RQ1-few-shot-generatescenarios");
-        gptHelper.sendChatGPTRequest(prompt,"gpt-4o-mini-2024-07-18","RQ1-few-shot-generatescenarios");
+        String prompt = promptTestScenariosFewShot(exhelper.getUserRequirements(), exhelper.getTestScenarioExample());
+        exhelper.putOutputToFile(getOutBasePath(), "few-shot-prompt", prompt);
+        exhelper.sendChatGPTRequest(prompt,"gpt-4o-2024-05-13","RQ1-few-shot-generatescenarios");
+        exhelper.sendChatGPTRequest(prompt,"gpt-4o-mini-2024-07-18","RQ1-few-shot-generatescenarios");
 
         log.debug("The prompt for FewShot is: {}", prompt);
 
-        prompt = promptTestScenariosFewShotCoT(exhelper.getUserStories(), exhelper.getUserStoriesExamples());
+        prompt = promptTestScenariosFewShotCoT(exhelper.getUserRequirements(), exhelper.getTestScenarioExample());
         log.debug("The prompt for Few Shot with CoT is: {}", prompt);
-        putOutputToFile(getOutBasePath(), "few-shot-CoT-prompt", prompt);
-        gptHelper.sendChatGPTRequest(prompt,"gpt-4o-mini-2024-07-18","RQ1-few-shot-cot-generatescenarios");
-        gptHelper.sendChatGPTRequest(prompt,"gpt-4o-2024-05-13","RQ1-few-shot-cot-generatescenarios");
+        exhelper.putOutputToFile(getOutBasePath(), "few-shot-CoT-prompt", prompt);
+        exhelper.sendChatGPTRequest(prompt,"gpt-4o-mini-2024-07-18","RQ1-few-shot-cot-generatescenarios");
+        exhelper.sendChatGPTRequest(prompt,"gpt-4o-2024-05-13","RQ1-few-shot-cot-generatescenarios");
     }
 
     static String promptTestScenariosFewShot(String userRequirements, String testScenariosExamples) {

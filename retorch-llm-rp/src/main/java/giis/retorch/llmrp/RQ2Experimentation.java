@@ -5,13 +5,12 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
-public class RQ2Experimentation extends ExperimentationMainClass {
+public class RQ2Experimentation {
     private static final Logger log = LoggerFactory.getLogger(RQ2Experimentation.class);
     private static final String OUT_BASE_PATH = "retorch-llm-rp/target/prompts-input/RQ2";
-
+    static ExperimentationHelper exhelper;
     public static void main(String[] args) throws IOException {
         exhelper = new ExperimentationHelper();
-        gptHelper = new GPTHelper();
         String[] testCases = {"user view enrolled courses", "user access courses and view classes", "teacher creates a course", "user can access and view the calendar"};
         //GPT4o mini
         // Process Few-Shot Prompts
@@ -38,10 +37,10 @@ public class RQ2Experimentation extends ExperimentationMainClass {
             } else {
                 prompt = promptTestCasesFewShot(exHelper.getTestScenarios(), exHelper.getTestCasesCrossValidation(i + 1), testCaseRequired);
             }
-            putOutputToFile(getOutBasePath(), (isCot ? "few-shot-prompt-cot-" : "few-shot-prompt-") + testCaseRequired, prompt);
+            exHelper.putOutputToFile(getOutBasePath(), (isCot ? "few-shot-prompt-cot-" : "few-shot-prompt-") + testCaseRequired, prompt);
             log.debug("The prompt for FewShot {} is: {}", (isCot ? " COT" : ""), prompt);
             // Uncomment the next line to send the prompt to ChatGPT
-            gptHelper.sendChatGPTRequest(prompt, model, expName + "-" + testCaseRequired);
+            exhelper.sendChatGPTRequest(prompt, model, expName + "-" + testCaseRequired);
         }
     }
 
