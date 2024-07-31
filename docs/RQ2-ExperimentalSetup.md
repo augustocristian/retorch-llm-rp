@@ -1,8 +1,12 @@
 ## How we select the test cases for the second research questions
+
 The following sections explain how we select the system test cases subset to prompt the different models.
+
 ### How we calculate the levenshtein distance
-To select the test cases to provide the LLM we employ the Levenshtein distance with their coverage matrix over the 
+
+To select the test cases to provide the LLM we employ the Levenshtein distance with their coverage matrix over the
 user requirements.The formula used to calculate these distance is:
+
 ````vba
 Function Levenshtein(s1 As String, s2 As String) As Integer
     Dim i As Integer, j As Integer
@@ -40,7 +44,8 @@ Function Levenshtein(s1 As String, s2 As String) As Integer
 End Function
  
 ````
-The matrix with the different Levenshtein distance is  the following:
+
+The matrix with the different Levenshtein distance is the following:
 
 | System Test Case                         | **Scenario 1 (A)** | **Scenario 2(B)** | **Scenario 3 (C)** | Scenario 4 | Scenario 5 | Scenario 8 | Scenario 9 | Scenario 10 | Scenario 11 | Scenario 12 | Scenario 13 | **Scenario 14 (D)** | Scenario 15 |
 |------------------------------------------|:------------------:|:-----------------:|:------------------:|:----------:|:----------:|:----------:|:----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-------------------:|:-----------:|
@@ -66,6 +71,7 @@ The matrix with the different Levenshtein distance is  the following:
 | spiderUnLoggedTest                       |         3          |         2         |         2          |     7      |     4      |     2      |     1      |      2      |      2      |      2      |      2      |          2          |      3      |
 | loginTest                                |         2          |         1         |         1          |     6      |     3      |     2      |     0      |      1      |      1      |      1      |      1      |          1          |      4      |
 
-We select the test cases (A) forumLoadEntriesTest, (B) forumNewEntryTest, (C) teacherCreateAndDeleteCourseTest 
-and (D) teacherCourseMainTest to cover the scenarios (A) Viewing Enrolled Courses, (B) Accessing Courses and Viewing Classes
+We select the test cases (A) forumLoadEntriesTest, (B) forumNewEntryTest, (C) teacherCreateAndDeleteCourseTest
+and (D) teacherCourseMainTest to cover the scenarios (A) Viewing Enrolled Courses, (B) Accessing Courses and Viewing
+Classes
 (C) Teacher Creating a Course and (D) User Accessing Calendar

@@ -3,12 +3,12 @@
 ### Most consistent Execution
 
 ### Summary
+
 | Number of Scenarios | % Coverage |
 |---------------------|------------|
 | 16                  | 100 %      |
 
 ### Scenarios Generated:
-
 
 ```markdown
 ### Scenario 1: Viewing Enrolled Courses
@@ -256,6 +256,7 @@
 ```
 
 ### Coverage matrix
+
 | User Requirement | Scenario 1 | Scenario 2 | Scenario 3 | Scenario 4 | Scenario 5 | Scenario 6 | Scenario 7 | Scenario 8 | Scenario 9 | Scenario 10 | Scenario 11 | Scenario 12 | Scenario 13 | Scenario 14 | Scenario 15 | Scenario 16 |
 |------------------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:-----------:|:-----------:|:-----------:|-------------|:-----------:|:-----------:|:-----------:|
 | 1                |     X      |            |            |            |            |            |            |            |            |             |             |             |             |             |             |             |
@@ -298,9 +299,8 @@
 | 16.2             |            |            |            |            |            |            |            |            |            |             |             |             |             |             |             |      X      |
 | 16.3             |            |            |            |            |            |            |            |            |            |             |             |             |             |             |             |      X      |
 
-
-
 ### Execution 1
+
 ```markdown
 ### Scenario 1: Viewing Enrolled Courses
 **Objective:** Ensure all users can see the courses they are enrolled in.
@@ -541,6 +541,7 @@
 **Expected Output:**
 - The students are added to the course successfully, and a confirmation message is displayed.
 ```
+
 ### Execution 2
 
 ```markdown

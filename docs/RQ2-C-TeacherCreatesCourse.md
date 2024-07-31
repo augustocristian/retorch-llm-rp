@@ -84,9 +84,11 @@ void teacherCreateCourseTest(String mail, String password, String role) {
 #### Changes Performed
 
 ```diff
-@ParameterizedTest
-@MethodSource("data")
-void teacherCreateCourseTest(String mail, String password, String role) {
+- @ParameterizedTest
+- @MethodSource("data")
++ @Test
+- void teacherCreateCourseTest(String mail, String password, String role) {
++ void teacherCreateCourseTest() {
 +    String teacherEmail = "teacher@gmail.com"; // Replace with actual test data
 +    String teacherPassword = "pass"; // Replace with actual test data
 -    this.slowLogin(user, mail, password);
@@ -180,9 +182,11 @@ void teacherCreateCourseTest(String mail, String password, String role) {
 #### Changes Performed
 
 ```diff
-@ParameterizedTest
-@MethodSource("data")
-void teacherCreateCourseTest(String mail, String password, String role) {
+- @ParameterizedTest
+- @MethodSource("data")
++ @Test
+- void teacherCreateCourseTest(String mail, String password, String role) {
++ void teacherCreateCourseTest() {
 +    String teacherEmail = "teacher@gmail.com"; // Replace with actual test data
 +    String teacherPassword = "pass"; // Replace with actual test data
 -    this.slowLogin(user, mail, password);
@@ -293,7 +297,7 @@ void teacherCreatesCourseTest(String mail, String password, String role) {
 - @ParameterizedTest
 - @MethodSource("data")
 + @Test
-void teacherCreatesCourseTest(String mail, String password, String role) {
+void teacherCreatesCourseTest() {
 +     String teacherEmail = "teacher@gmail.com"; // Replace with actual test data
 +     String teacherPassword = "pass"; // Replace with actual test data
       // Log in with provided credentials
@@ -392,8 +396,8 @@ void teacherCreatesCourse() {
 #### Changes Performed
 
 ```diff
-- void teacherCreatesCourse() {
 + @Test
+- void teacherCreatesCourse() {
 + void teacherCreatesCourse() throws ElementNotFoundException {
       // Test data
 -     String teacherEmail = "teacher@example.com"; // Replace with actual test data

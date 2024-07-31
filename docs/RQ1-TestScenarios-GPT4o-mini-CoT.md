@@ -1,13 +1,14 @@
 # RQ1 Test Scenarios Generation GPT 4o-mini  Few-Shot + CoT
+
 ### Most consistent Execution
 
 ### Summary
+
 | Number of Scenarios | % Coverage |
 |---------------------|------------|
 | 12                  | 92.30 %    |
 
 ### Scenarios Generated:
-
 
 ```markdown
 ### Test Scenario 1: User Enrollment Visibility
@@ -187,7 +188,9 @@
 Each scenario is designed to be as concise as possible while still covering all necessary actions. However, if any scenario includes redundant navigation or confirmation steps that do not add value to the testing process, those could be streamlined. For example, if the system automatically redirects to the dashboard after login, the step to navigate to the dashboard could be considered unnecessary.
 
 ```
+
 ### Coverage Matrix
+
 | User Requirement | Scenario 1 | Scenario 2 | Scenario 3 | Scenario 4 | Scenario 5 | Scenario 6 | Scenario 7 | Scenario 8 | Scenario 9 | Scenario 10 | Scenario 11 | Scenario 12 |
 |------------------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:-----------:|:-----------:|:-----------:|
 | 1                |     X      |            |            |            |            |            |            |            |            |             |             |             |
@@ -226,8 +229,8 @@ Each scenario is designed to be as concise as possible while still covering all 
 | 13               |            |            |            |            |            |            |            |            |            |             |             |             |
 | 14               |            |            |            |            |            |
 
-
 ### Execution 1
+
 ```markdown
 ### Test Scenario 1: User Enrollment Visibility
 **Objective:** Ensure all users can see the courses they are enrolled in.
@@ -429,6 +432,7 @@ Each scenario is designed to be as concise as possible while still covering all 
 ```
 
 ### Execution 2
+
 ```markdown
 ### Test Scenario 1: User Enrollment and Course Visibility
 **Objective:** Verify that all users can see the courses they are enrolled in.
@@ -626,6 +630,7 @@ Each scenario is designed to be as concise as possible while still covering all 
 ```
 
 ### Execution 3
+
 ```markdown
 ## Test Scenario 1: Viewing Enrolled Courses
 **Objective:** Ensure all users can see the courses they are enrolled in.
@@ -816,6 +821,7 @@ Each scenario is designed to be as concise as possible while still covering all 
 ```
 
 ### Execution 4
+
 ```markdown
 
 ### Test Scenario 1: User Enrollment Visibility
@@ -1029,8 +1035,8 @@ Each scenario is designed to be as concise as possible while still covering all 
 - Steps that do not directly contribute to the completion of the scenario or are redundant should be removed. For example, repeatedly logging in for each scenario can be streamlined by assuming the user is logged in for subsequent tests unless specified otherwise.
 ```
 
-
 ### Execution 5
+
 ```markdown
 ### Test Scenario 1: User Enrollment Visibility
 **Objective:** Ensure all users can see the courses they are enrolled in.

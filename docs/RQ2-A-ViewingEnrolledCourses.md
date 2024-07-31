@@ -5,13 +5,6 @@
 The closest Levenshtein test case is:
 
 ```java
- /**
- * This test get login and navigate to the courses zone checking if there are
- * any courses. Second and go to the Pseudo... course accessing to the forum
- * and looks if its enable.If It's enable, load all the entries and checks for
- * someone that have comments on it.Finally, with the two previous conditions,
- * makes an assertEquals() to ensure that both are accomplishment
- */
 @AccessMode(resID = "loginservice", concurrency = 10, sharing = true, accessMode = "READONLY")
 @AccessMode(resID = "openvidumock", concurrency = 10, sharing = true, accessMode = "NOACCESS")
 @AccessMode(resID = "forum", concurrency = 10, sharing = true, accessMode = "READONLY")
@@ -190,7 +183,7 @@ void viewEnrolledCoursesTest() {
 - @Test
 + @ParameterizedTest
 +@MethodSource("data")
-void viewEnrolledCoursesTest() {
+void viewEnrolledCoursesTest(String mail, String password, String role) {
     // Setup
     -String email = "user@example.com";
     -String password = "password";
@@ -198,7 +191,7 @@ void viewEnrolledCoursesTest() {
     +String[] expectedCourses = {"Pseudoscientific course for treating the evil eye",  "Don't mind. This is a real course"};
 
     // Login
-    this.slowLogin(user, email, password);
+    this.slowLogin(user, mail, password);
 
     // Verify Dashboard
     try {
@@ -340,12 +333,12 @@ void viewEnrolledCourses() {
 +@ParameterizedTest
 +@MethodSource("data")
 -void viewEnrolledCourses() {
-+void viewEnrolledCourses() throws ElementNotFoundException {
++void viewEnrolledCourses(String mail, String password, String role) throws ElementNotFoundException {
 
      // Setup: Log in to the application
 -    String email = "testuser@example.com"; // Replace with actual test user email
 -    String password = "password"; // Replace with actual test user password
-     this.slowLogin(user, email, password);
+     this.slowLogin(user, mail, password);
 
      // Navigation: Navigate to the dashboard
 -    NavigationUtilities.toDashboard(driver);

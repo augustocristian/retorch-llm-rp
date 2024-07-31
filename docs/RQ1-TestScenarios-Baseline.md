@@ -1,10 +1,11 @@
-# Fullteaching Test Suite baseline
+# FullTeaching Test Suite baseline
 
 ## Summary
 
 | Number of Test Cases | % Coverage |
 |----------------------|------------|
 | 21                   | 79.48 %    |
+
 ## Coverage Matrix
 
 | User Requirement | oneToOneChatInSessionChrome | courseRestOperations | courseInfoRestOperations | sessionRestOperations | forumRestOperations | filesRestOperations | attendersRestOperations | sessionTest | oneToOneVideoAudioSessionChrome | studentCourseMainTest | teacherCourseMainTest | teacherCreateAndDeleteCourseTest | teacherEditCourseValues | teacherDeleteCourseTest | forumLoadEntriesTest | forumNewEntryTest | forumNewCommentTest | forumNewReply2CommentTest | spiderLoggedTest | spiderUnLoggedTest | loginTest |

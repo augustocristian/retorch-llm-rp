@@ -21,12 +21,11 @@ import java.util.Scanner;
 
 public class ExperimentationHelper {
 
+    static final String PATH_KEY = "CHATGPT_API_KEY";
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
     public ExperimentationHelper() {
         //This is the default constructor to avoid smells
     }
-
-    static final String PATH_KEY = "CHATGPT_API_KEY";
-    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     public void sendChatGPTRequest(String body, String model, String experimentname) throws IOException {
 
@@ -56,7 +55,6 @@ public class ExperimentationHelper {
 
             // Create the user message
             JSONObject userMessage = new JSONObject();
-
 
             userMessage.put("role", "user");
             userMessage.put("content", new JSONArray().put(messageContent));
@@ -94,7 +92,7 @@ public class ExperimentationHelper {
                 // Format the current date and time
                 String formattedDateTime = now.format(formatter);
 
-                putOutputToFile("retorch-llm-rp/src/main/resources/outputs", experimentname +"-"+ model +"-"+ formattedDateTime, responseBody);
+                putOutputToFile("retorch-llm-rp/src/main/resources/outputs", experimentname + "-" + model + "-" + formattedDateTime, responseBody);
                 conn.disconnect();
             }
 
@@ -102,11 +100,10 @@ public class ExperimentationHelper {
 
             log.error(e.getMessage());
 
-
             if (conn != null) {
 
                 log.error(conn.getErrorStream().toString());
-                log.error("The response was {}",getErrorResponse(conn.getErrorStream()));
+                log.error("The response was {}", getErrorResponse(conn.getErrorStream()));
                 conn.disconnect();
             }
             System.exit(-1);
@@ -139,7 +136,7 @@ public class ExperimentationHelper {
     }
 
     public String getErrorResponse(InputStream i) throws IOException {
-        StringBuilder builder=new StringBuilder();
+        StringBuilder builder = new StringBuilder();
         InputStreamReader in = new InputStreamReader(i);
         BufferedReader br = new BufferedReader(in);
         String output;

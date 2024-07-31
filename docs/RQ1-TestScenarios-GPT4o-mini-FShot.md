@@ -3,6 +3,7 @@
 ### Most consistent Execution
 
 ### Summary
+
 | Number of Scenarios | % Coverage |
 |---------------------|------------|
 | 12                  | 97.47 %    |
@@ -216,6 +217,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Expected Output:**
 - A calendar view with all classes, including dates and times, is displayed.
 ```
+
 ### Coverage Matrix
 
 | User Requirement | Scenario 1 | Scenario 2 | Scenario 3 | Scenario 4 | Scenario 5 | Scenario 6 | Scenario 7 | Scenario 8 | Scenario 9 | Scenario 10 | Scenario 11 | Scenario 12 |
@@ -259,7 +261,6 @@ Below are the detailed test scenarios based on the provided user requirements. E
 | 16.1             |            |            |            |            |            |            |            |            |            |             |             |      X      |
 | 16.2             |            |            |            |            |            |            |            |            |            |             |             |      X      |
 | 16.3             |            |            |            |            |            |            |            |            |            |             |             |      X      |
-
 
 ### Execution 1
 
@@ -449,6 +450,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 - The system confirms that students have been added successfully for each method used.
 
 ```
+
 ### Execution 2
 
 ```markdown

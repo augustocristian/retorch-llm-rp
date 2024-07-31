@@ -223,7 +223,8 @@ void userAccessCoursesAndViewClassesTest() {
 - @Test
 + @ParameterizedTest
 + @MethodSource("data")
-void userAccessCoursesAndViewClassesTest() {
+- void userAccessCoursesAndViewClassesTest() {
++ void userAccessCoursesAndViewClassesTest(String mail, String password, String role) {
       // Step 1: User logs into the application
 -     this.slowLogin(user, "user@example.com", "password");
 +     this.slowLogin(user, mail, password);

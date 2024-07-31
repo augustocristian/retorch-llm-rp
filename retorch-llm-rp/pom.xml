@@ -12,7 +12,7 @@
     <description>Multimodule maven project template, module without dependencies</description>
     <url>http://github.com/giis-uniovi/samples-giis-template</url>
     <organization>
-        <name>Software Engineering Research Group (GIIS) - Universidad de Oviedo, ES</name>
+        <name>Software Engineering Research Group (GIIS) - University of Oviedo, ES</name>
         <url>http://giis.uniovi.es/</url>
     </organization>
     <dependencies>

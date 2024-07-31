@@ -8,22 +8,23 @@ import java.io.IOException;
 public class RQ2Experimentation {
     private static final Logger log = LoggerFactory.getLogger(RQ2Experimentation.class);
     private static final String OUT_BASE_PATH = "retorch-llm-rp/target/prompts-input/RQ2";
-    static ExperimentationHelper exhelper;
+    static ExperimentationHelper exHelper;
+
     public static void main(String[] args) throws IOException {
-        exhelper = new ExperimentationHelper();
+        exHelper = new ExperimentationHelper();
         String[] testCases = {"user view enrolled courses", "user access courses and view classes", "teacher creates a course", "user can access and view the calendar"};
         //GPT4o mini
         // Process Few-Shot Prompts
-        processPrompts(exhelper, testCases, false, "RQ2-few-shot", "gpt-4o-mini-2024-07-18");
+        processPrompts(exHelper, testCases, false, "RQ2-few-shot", "gpt-4o-mini-2024-07-18");
 
         // Process Few-Shot CoT Prompts
-        processPrompts(exhelper, testCases, true, "RQ2-few-shot-cot", "gpt-4o-mini-2024-07-18");
+        processPrompts(exHelper, testCases, true, "RQ2-few-shot-cot", "gpt-4o-mini-2024-07-18");
         //GPT4o
         // Process Few-Shot Prompts
-        processPrompts(exhelper, testCases, false, "RQ2-few-shot", "gpt-4o-2024-05-13");
+        processPrompts(exHelper, testCases, false, "RQ2-few-shot", "gpt-4o-2024-05-13");
 
         // Process Few-Shot CoT Prompts
-        processPrompts(exhelper, testCases, true, "RQ2-few-shot-cot", "gpt-4o-2024-05-13");
+        processPrompts(exHelper, testCases, true, "RQ2-few-shot-cot", "gpt-4o-2024-05-13");
 
     }
 
@@ -40,7 +41,7 @@ public class RQ2Experimentation {
             exHelper.putOutputToFile(getOutBasePath(), (isCot ? "few-shot-prompt-cot-" : "few-shot-prompt-") + testCaseRequired, prompt);
             log.debug("The prompt for FewShot {} is: {}", (isCot ? " COT" : ""), prompt);
             // Uncomment the next line to send the prompt to ChatGPT
-            exhelper.sendChatGPTRequest(prompt, model, expName + "-" + testCaseRequired);
+            RQ2Experimentation.exHelper.sendChatGPTRequest(prompt, model, expName + "-" + testCaseRequired);
         }
     }
 

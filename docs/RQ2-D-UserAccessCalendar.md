@@ -310,8 +310,8 @@ void userCanAccessAndViewCalendarTest(String mail, String password, String role)
 #### Changes Performed
 
 ```diff
-  @ParameterizedTest
- @MethodSource("data")
+@ParameterizedTest
+@MethodSource("data")
 void userCanAccessAndViewCalendarTest(String mail, String password, String role) {
      // Step 1: User logs into the application
      this.slowLogin(user, mail, password);

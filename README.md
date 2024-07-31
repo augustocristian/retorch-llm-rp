@@ -34,7 +34,7 @@ The replication package is structured as follows:
 ## Experimental Subject
 
 The experimental subject is a real-world application
-called [Fullteaching](https://github.com/codeurjc-students/2019-FullTeaching/tree/Angular-Refactor), used as a
+called [FullTeaching](https://github.com/codeurjc-students/2019-FullTeaching/tree/Angular-Refactor), used as a
 demonstrator of the [ElasTest EU Project](https://elastest.eu/). FullTeaching provides an education platform composed
 of several test resources, such as web servers, databases, and multimedia servers that allows to create online
 classrooms, classes or publish and create class resources.
@@ -46,7 +46,7 @@ test, cases in these repositories. The test suite is made available as the versi
 the [retorch-st-fullteaching](https://github.com/giis-uniovi/retorch-st-fullteaching)
 GitHub repository.
 
-The user requirements are extracted of the Fullteaching documentation (Fuente Pérez, P. (2017). FullTeaching :
+The user requirements are extracted of the FullTeaching documentation (Fuente Pérez, P. (2017). FullTeaching :
 Aplicación Web de docencia con videoconferencia.) and translated to english. The spanish version can be
 consulted [here](/retorch-llm-rp/src/main/resources/input/inputUserRequirements_spa.txt) and the english
 version [here](/retorch-llm-rp/src/main/resources/input/inputUserRequirements_en.txt).
@@ -81,7 +81,9 @@ To execute the different Java scripts, you need the following requirements:
 
 - Maven 3.9.7
 - Java SE 22.0.1
-  The OpenAI versions used:
+
+The OpenAI versions used:
+
 - gpt-4o-mini-2024-07-18
 - gpt-4o-2024-05-13.
 

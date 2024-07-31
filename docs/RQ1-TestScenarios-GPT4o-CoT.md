@@ -1,7 +1,9 @@
 # RQ1 Test Scenarios Generation GPT 4o Few-Shot + CoT
+
 ### Most consistent Execution
 
 ### Summary
+
 | Number of Scenarios | % Coverage |
 |---------------------|------------|
 | 15                  | 100 %      |
@@ -294,8 +296,8 @@
 | 16.2             |            |            |            |            |            |            |            |            |            |             |             |             |             |             |      X      | 
 | 16.3             |            |            |            |            |            |            |            |            |            |             |             |             |             |             |      X      | 
 
-
 ### Execution 1
+
 ```markdown
 ### Test Scenario 1: Viewing Enrolled Courses
 **Objective:** Ensure all users can see the courses they are enrolled in.
@@ -528,6 +530,7 @@ All user requirements are covered in the test scenarios. No unnecessary steps we
 ```
 
 ### Execution 2
+
 ```markdown
 **Objective: Ensure all users can see the courses they are enrolled in.**
 
@@ -776,6 +779,7 @@ All user requirements are covered in the test scenarios. No unnecessary steps we
 ```
 
 ### Execution 3
+
 ```markdown
 
 ### Test Scenario 1: Viewing Enrolled Courses
@@ -1021,6 +1025,7 @@ All user requirements are covered in the test scenarios. No unnecessary steps we
 ```
 
 ### Execution 4
+
 ```markdown
 ## System Testing Scenarios
 
@@ -1276,8 +1281,8 @@ All user requirements are covered in the test scenarios. No unnecessary steps we
 **User Requirements Covered:** (16)
 ```
 
-
 ### Execution 5
+
 ```markdown
 ### Scenario 1: Viewing Enrolled Courses
 **Objective:** Ensure all users can see the courses they are enrolled in.
