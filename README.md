@@ -115,7 +115,10 @@ paper itself.
 
 ## Citing this work
 
-[TO-DO]
+- Cristian Augusto, Jesús Morán, Antonia Bertolino, Claudio de la Riva, and Javier Tuya, “Exploratory study of the
+  usefulness of LLMs in System testing,” in TO-DO, TBC, Ed., TO-DO: TO-DO, 2024, pp.
+  1–13.   https://doi.org/TO-DO - [Full Paper available](TO-DO) - [Authors version](TO-DO) -
+  [Download citation](TO-DO)
 
 ## Acknowledgments
 
