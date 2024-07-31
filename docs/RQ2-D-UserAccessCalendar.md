@@ -1,5 +1,14 @@
 # RQ2 Test cases for Scenario User Accessing Calendar
 
+## Results
+
+| Model                  | Prompt Strategy | Changes (HAL) | Changes | Total | 
+|------------------------|:---------------:|:-------------:|:-------:|:-----:|
+| gpt-4o-2024-05-13      |    Few Shot     |       3       |    0    |   3   |
+| gpt-4o-2024-05-13      | Few Shot + CoT  |       4       |    0    |   4   |
+| gpt-4o-mini-2024-07-18 |    Few Shot     |       5       |    1    |   6   |
+| gpt-4o-mini-2024-07-18 | Few Shot + CoT  |       4       |    0    |   4   |
+
 ## Closest Levenshtein Test Case
 
 The closest Levenshtein test case is:

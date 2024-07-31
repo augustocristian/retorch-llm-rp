@@ -1,4 +1,11 @@
 # RQ2 Test Cases for Scenario Viewing Enrolled Courses
+## Results
+| Model                  | Prompt Strategy | Changes (HAL) | Changes | Total | 
+|------------------------|:---------------:|:-------------:|:-------:|:-----:|
+| gpt-4o-2024-05-13      |    Few Shot     |       2       |    0    |   2   |
+| gpt-4o-2024-05-13      | Few Shot + CoT  |       6       |    0    |   6   |
+| gpt-4o-mini-2024-07-18 |    Few Shot     |       5       |    0    |   5   |
+| gpt-4o-mini-2024-07-18 | Few Shot + CoT  |       6       |    2    |   9   |
 
 ## Closest Levenshtein Test Case
 
@@ -183,7 +190,8 @@ void viewEnrolledCoursesTest() {
 - @Test
 + @ParameterizedTest
 +@MethodSource("data")
-void viewEnrolledCoursesTest(String mail, String password, String role) {
+-void viewEnrolledCoursesTest() {
++void viewEnrolledCoursesTest(String mail, String password, String role) {
     // Setup
     -String email = "user@example.com";
     -String password = "password";

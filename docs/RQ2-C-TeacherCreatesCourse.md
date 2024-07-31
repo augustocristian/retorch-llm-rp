@@ -1,5 +1,14 @@
 # RQ2 Test cases for Scenario Teacher Creating a Course
 
+## Results
+
+| Model                  | Prompt Strategy | Changes (HAL) | Changes | Total | 
+|------------------------|:---------------:|:-------------:|:-------:|:-----:|
+| gpt-4o-2024-05-13      |    Few Shot     |      14       |    0    |  14   |
+| gpt-4o-2024-05-13      | Few Shot + CoT  |      14       |    0    |  14   |
+| gpt-4o-mini-2024-07-18 |    Few Shot     |      14       |    4    |  18   |
+| gpt-4o-mini-2024-07-18 | Few Shot + CoT  |       8       |    7    |  15   |
+
 ## Closest Levenshtein Test Case
 
 The expected (original) test case is:
@@ -89,8 +98,8 @@ void teacherCreateCourseTest(String mail, String password, String role) {
 + @Test
 - void teacherCreateCourseTest(String mail, String password, String role) {
 + void teacherCreateCourseTest() {
-+    String teacherEmail = "teacher@gmail.com"; // Replace with actual test data
-+    String teacherPassword = "pass"; // Replace with actual test data
++    String teacherEmail = "teacher@gmail.com";
++    String teacherPassword = "pass"; 
 -    this.slowLogin(user, mail, password);
 +    this.slowLogin(user, teacherEmail, teacherPassword);
 
@@ -187,8 +196,8 @@ void teacherCreateCourseTest(String mail, String password, String role) {
 + @Test
 - void teacherCreateCourseTest(String mail, String password, String role) {
 + void teacherCreateCourseTest() {
-+    String teacherEmail = "teacher@gmail.com"; // Replace with actual test data
-+    String teacherPassword = "pass"; // Replace with actual test data
++    String teacherEmail = "teacher@gmail.com"; 
++    String teacherPassword = "pass"; 
 -    this.slowLogin(user, mail, password);
 +    this.slowLogin(user, teacherEmail, teacherPassword);
 
@@ -297,9 +306,10 @@ void teacherCreatesCourseTest(String mail, String password, String role) {
 - @ParameterizedTest
 - @MethodSource("data")
 + @Test
-void teacherCreatesCourseTest() {
-+     String teacherEmail = "teacher@gmail.com"; // Replace with actual test data
-+     String teacherPassword = "pass"; // Replace with actual test data
+- void teacherCreatesCourseTest(String mail, String password, String role) {
++ void teacherCreatesCourseTest() {
++     String teacherEmail = "teacher@gmail.com"; 
++     String teacherPassword = "pass"; 
       // Log in with provided credentials
 -     this.slowLogin(user, mail, password);
 +     this.slowLogin(user, teacherEmail, teacherPassword);
@@ -329,8 +339,7 @@ void teacherCreatesCourseTest() {
           // Click on "Create Course" button
 -         WebElement createCourseButton = driver.findElement(By.id("createCourseButton")); // Adjust the locator as necessary
 +         WebElement createCourseSubmitButton = driver.findElement(By.id("submit-post-course-btn"));
--         Click.element(driver, createCourseButton);
-+         createCourseSubmitButton.click();
+          createCourseSubmitButton.click();
           // Wait for the course to be created and displayed in the dashboard
 -         Wait.notTooMuch(driver).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(), '" + courseTitle + "')]"))); // Adjust the locator as necessary
 +         Wait.notTooMuch(driver).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), '" + courseTitle + "')]"))); // Adjust the locator as necessary
@@ -412,6 +421,7 @@ void teacherCreatesCourse() {
 
       // Step 2: Navigate to Course Creation Page
 -     NavigationUtilities.toDashboard(driver);
++     NavigationUtilities.toCoursesHome(driver);
 -     Click.element(driver, By.id("create-course-button")); // Replace with actual button ID
 +     Click.element(driver, By.id("add-course-icon")); // Replace with actual button ID
 

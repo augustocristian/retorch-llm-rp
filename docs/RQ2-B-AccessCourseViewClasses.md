@@ -1,5 +1,14 @@
 # RQ2 Test cases for Scenario Accessing Courses and Viewing Classes
 
+## Results
+
+| Model                  | Prompt Strategy | Changes (HAL) | Changes | Total | 
+|------------------------|:---------------:|:-------------:|:-------:|:-----:|
+| gpt-4o-2024-05-13      |    Few Shot     |       5       |    0    |   5   |
+| gpt-4o-2024-05-13      | Few Shot + CoT  |       9       |    0    |   9   |
+| gpt-4o-mini-2024-07-18 |    Few Shot     |       7       |    0    |   7   |
+| gpt-4o-mini-2024-07-18 | Few Shot + CoT  |      10       |    0    |  10   |
+
 ## Closest Levenshtein Test Case
 
 The closest Levenshtein test case is:
@@ -342,7 +351,7 @@ void userAccessCoursesAndViewClassesTest(String mail, String password, String ro
 +         CourseNavigationUtilities.go2Tab(driver, SESSION_ICON);
 -         List<WebElement> classes = CourseNavigationUtilities.getClassesList(driver);
 +         List<WebElement> classes = driver.findElements(By.className("session-data"));
-+         assertFalse(classes.isEmpty(), "No classes found for the selected course.");
+          assertFalse(classes.isEmpty(), "No classes found for the selected course.");
 
          // Optionally, check if classes are ordered by date
          // (Assuming there is a method to verify the order of classes)
