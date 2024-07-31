@@ -1,11 +1,11 @@
 # RQ2 Test Cases for Scenario Viewing Enrolled Courses
 ## Results
-| Model                  | Prompt Strategy | Changes (HAL) | Changes | Total | 
-|------------------------|:---------------:|:-------------:|:-------:|:-----:|
-| gpt-4o-2024-05-13      |    Few Shot     |       2       |    0    |   2   |
-| gpt-4o-2024-05-13      | Few Shot + CoT  |       6       |    0    |   6   |
-| gpt-4o-mini-2024-07-18 |    Few Shot     |       5       |    0    |   5   |
-| gpt-4o-mini-2024-07-18 | Few Shot + CoT  |       6       |    2    |   8   |
+| Model                  | Prompt Strategy | Changes (HAL) | Changes | Total Changes | Total Lines |
+|------------------------|:---------------:|:-------------:|:-------:|:-------------:|:-----------:|
+| gpt-4o-2024-05-13      |    Few Shot     |       2       |    0    |       2       |     22      |
+| gpt-4o-2024-05-13      | Few Shot + CoT  |       6       |    0    |       6       |     26      |
+| gpt-4o-mini-2024-07-18 |    Few Shot     |       5       |    0    |       5       |     22      |
+| gpt-4o-mini-2024-07-18 | Few Shot + CoT  |       6       |    2    |       8       |     20      |
 
 ## Closest Levenshtein Test Case
 

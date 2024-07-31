@@ -2,12 +2,12 @@
 
 ## Results
 
-| Model                  | Prompt Strategy | Changes (HAL) | Changes | Total | 
-|------------------------|:---------------:|:-------------:|:-------:|:-----:|
-| gpt-4o-2024-05-13      |    Few Shot     |       5       |    0    |   5   |
-| gpt-4o-2024-05-13      | Few Shot + CoT  |       9       |    0    |   9   |
-| gpt-4o-mini-2024-07-18 |    Few Shot     |       7       |    0    |   7   |
-| gpt-4o-mini-2024-07-18 | Few Shot + CoT  |      10       |    0    |  10   |
+| Model                  | Prompt Strategy | Changes (HAL) | Changes | Total Changes | Total Lines |
+|------------------------|:---------------:|:-------------:|:-------:|:-------------:|:-----------:|
+| gpt-4o-2024-05-13      |    Few Shot     |       5       |    0    |       5       |     36      |
+| gpt-4o-2024-05-13      | Few Shot + CoT  |       9       |    0    |       9       |     27      |
+| gpt-4o-mini-2024-07-18 |    Few Shot     |       7       |    0    |       7       |     31      |
+| gpt-4o-mini-2024-07-18 | Few Shot + CoT  |      10       |    0    |      10       |     33      |
 
 ## Closest Levenshtein Test Case
 
