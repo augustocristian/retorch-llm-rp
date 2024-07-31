@@ -62,11 +62,9 @@ void teachercourseMainTest(String mail, String password, String role) {
 }
 ```
 
-## GPT-4o
+## GPT-4o Few-Shot
 
-The obtained test case with 4o:
-
-### Few-Shot
+The obtained test case with 4o FS:
 
 ```java
 
@@ -93,7 +91,7 @@ void userAccessCalendarTest(String mail, String password, String role) {
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
  @AccessMode(resID = "loginservice", concurrency = 10, sharing = true, accessMode = "READONLY")
@@ -123,9 +121,9 @@ void userAccessCalendarTest(String mail, String password, String role) {
  }
 ```
 
-### Few Shot + COT
+## GPT-4o Few Shot + CoT
 
-The obtained test case with 4o-few-shot+CoT:
+The obtained test case with 4o FS+CoT:
 
 ```java
 
@@ -160,7 +158,7 @@ void userCanAccessAndViewCalendarTest(String mail, String password, String role)
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
  @ParameterizedTest
@@ -199,11 +197,9 @@ void userCanAccessAndViewCalendarTest(String mail, String password, String role)
 
 ```
 
-## GPT-4o-mini
+## GPT-4o-mini Few-Shot
 
-The obtained test case with 4o:
-
-### Few-Shot
+The obtained test case with 4o-mini and FS:
 
 ```java
 
@@ -239,7 +235,7 @@ void userAccessingCalendarTest(String mail, String password, String role) {
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
  @AccessMode(resID = "loginservice", concurrency = 10, sharing = true, accessMode = "READONLY")
@@ -279,9 +275,9 @@ void userAccessingCalendarTest(String mail, String password, String role) {
  }
 ```
 
-### Few Shot + COT
+## GPT-4o-mini Few Shot + CoT
 
-The obtained test case with 4o-few-shot+CoT:
+The obtained test case with 4o-mini FS+CoT:
 
 ```java
 
@@ -316,7 +312,7 @@ void userCanAccessAndViewCalendarTest(String mail, String password, String role)
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
 @ParameterizedTest

@@ -1,8 +1,8 @@
-## How we select the test cases for the second research questions
+# How we select the test cases for the second research questions
 
 The following sections explain how we select the system test cases subset to prompt the different models.
 
-### How we calculate the levenshtein distance
+## How we calculate the levenshtein distance
 
 To select the test cases to provide the LLM we employ the Levenshtein distance with their coverage matrix over the
 user requirements.The formula used to calculate these distance is:
@@ -45,7 +45,10 @@ End Function
  
 ````
 
-The matrix with the different Levenshtein distance is the following:
+## Levenshtein distance matrix
+
+The matrix with the different Levenshtein distance is the following, in the columns are presented the scenarios and in
+the rows the different test cases
 
 | System Test Case                         | **Scenario 1 (A)** | **Scenario 2(B)** | **Scenario 3 (C)** | Scenario 4 | Scenario 5 | Scenario 8 | Scenario 9 | Scenario 10 | Scenario 11 | Scenario 12 | Scenario 13 | **Scenario 14 (D)** | Scenario 15 |
 |------------------------------------------|:------------------:|:-----------------:|:------------------:|:----------:|:----------:|:----------:|:----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-------------------:|:-----------:|
@@ -73,5 +76,4 @@ The matrix with the different Levenshtein distance is the following:
 
 We select the test cases (A) forumLoadEntriesTest, (B) forumNewEntryTest, (C) teacherCreateAndDeleteCourseTest
 and (D) teacherCourseMainTest to cover the scenarios (A) Viewing Enrolled Courses, (B) Accessing Courses and Viewing
-Classes
-(C) Teacher Creating a Course and (D) User Accessing Calendar
+Classes (C) Teacher Creating a Course and (D) User Accessing Calendar

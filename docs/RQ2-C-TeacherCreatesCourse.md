@@ -11,7 +11,7 @@
 
 ## Closest Levenshtein Test Case
 
-The expected (original) test case is:
+The closest Levenshtein test case is:
 
 ```java
 
@@ -43,11 +43,9 @@ void teacherCreateAndDeletecourseTest(String mail, String password, String role)
 }
 ```
 
-## GPT-4o
+## GPT-4o Few-Shot
 
-The obtained test case with 4o:
-
-### Few-Shot
+The obtained test case with 4o and FS:
 
 ```java
 
@@ -90,7 +88,7 @@ void teacherCreateCourseTest(String mail, String password, String role) {
 
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
 - @ParameterizedTest
@@ -144,9 +142,9 @@ void teacherCreateCourseTest(String mail, String password, String role) {
  }
 ```
 
-### Few Shot + COT
+## GPT-4o Few Shot + COT
 
-The obtained test case with 4o-few-shot+CoT:
+The obtained test case with 4o FS+CoT:
 
 ```java
 
@@ -188,7 +186,7 @@ void teacherCreateCourseTest(String mail, String password, String role) {
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
 - @ParameterizedTest
@@ -242,11 +240,9 @@ void teacherCreateCourseTest(String mail, String password, String role) {
  }
 ```
 
-## GPT-4o-mini
+## GPT-4o-mini Few-Shot
 
-The obtained test case with 4o:
-
-### Few-Shot
+The obtained test case with 4o-mini FS:
 
 ```java
 
@@ -295,7 +291,7 @@ void teacherCreatesCourseTest(String mail, String password, String role) {
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
   @AccessMode(resID = "loginservice", concurrency = 10, sharing = true, accessMode = "READONLY")
@@ -357,9 +353,9 @@ void teacherCreatesCourseTest(String mail, String password, String role) {
 
 ```
 
-### Few Shot + COT
+## GPT-4o-mini Few Shot + COT
 
-The obtained test case with 4o-few-shot+CoT:
+The obtained test case with 4o-mini FS+CoT:
 
 ```java
 
@@ -402,7 +398,7 @@ void teacherCreatesCourse() {
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
 + @Test

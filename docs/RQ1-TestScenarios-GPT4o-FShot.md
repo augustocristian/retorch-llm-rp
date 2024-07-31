@@ -1,6 +1,6 @@
 # RQ1 Test Scenarios Generation GPT 4o Few Shot
 
-### Most consistent Execution
+## Most consistent Execution: [Execution 5](#Execution-5)
 
 ### Summary
 
@@ -12,36 +12,44 @@
 
 ```markdown
 ### Scenario 1: Viewing Enrolled Courses
+
 **Objective:** Ensure all users can see the courses they are enrolled in.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. User views the list of enrolled courses.
 
 **Expected Output:**
+
 - The dashboard displays a list of all courses the user is enrolled in.
 
 ---
 
 ### Scenario 2: Accessing Course Details
+
 **Objective:** Ensure all users can access any of the courses and see the classes ordered by date.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. User clicks on a specific course.
 4. User views the list of classes ordered by date.
 
 **Expected Output:**
+
 - The course page displays a list of classes ordered by date.
 
 ---
 
 ### Scenario 3: Teacher Creating a Course
+
 **Objective:** Ensure the teacher can create courses with a title and optional image.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the course creation page.
 3. Teacher enters a course title.
@@ -49,14 +57,17 @@
 5. Teacher clicks the "Create Course" button.
 
 **Expected Output:**
+
 - The system creates the course and displays it in the teacher's dashboard.
 
 ---
 
 ### Scenario 4: Teacher Creating a Class
+
 **Objective:** Ensure the teacher can create a new class within a course with all required attributes.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks on "Create New Class."
@@ -67,14 +78,17 @@
 8. Teacher clicks the "Create Class" button.
 
 **Expected Output:**
+
 - The system creates the class and displays it in the course's class list.
 
 ---
 
 ### Scenario 5: Student Interacting with Courses
+
 **Objective:** Ensure students can interact with courses on their dashboard.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to the dashboard.
 3. Student views associated course information.
@@ -83,6 +97,7 @@
 6. Student downloads attached files.
 
 **Expected Output:**
+
 - The dashboard displays course information.
 - The forum accepts and displays the student's comment.
 - The student successfully downloads attached files.
@@ -90,9 +105,11 @@
 ---
 
 ### Scenario 6: Teacher Conducting a Class
+
 **Objective:** Ensure the teacher can conduct classes with all specified functionalities.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific class.
 3. Teacher clicks "Start Class."
@@ -103,14 +120,17 @@
 8. Teacher ends the class.
 
 **Expected Output:**
+
 - The class starts and all functionalities work as expected.
 
 ---
 
 ### Scenario 7: Student Attending a Class
+
 **Objective:** Ensure students can attend classes with all specified functionalities.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to a specific class.
 3. Student enters the classroom when the teacher starts it.
@@ -122,41 +142,50 @@
 9. Student shares audio and webcam when granted speaking request.
 
 **Expected Output:**
+
 - The student successfully attends and interacts in the class.
 
 ---
 
 ### Scenario 8: User Registration
+
 **Objective:** Ensure users can register using their email and pass a CAPTCHA.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters email and other required details.
 3. User completes the CAPTCHA.
 4. User clicks "Register."
 
 **Expected Output:**
+
 - The system registers the user and sends a confirmation email.
 
 ---
 
 ### Scenario 9: User Login
+
 **Objective:** Ensure users can log in to the application.
 
 **Steps:**
+
 1. User navigates to the login page.
 2. User enters email and password.
 3. User clicks "Login."
 
 **Expected Output:**
+
 - The system logs the user in and redirects to the dashboard.
 
 ---
 
 ### Scenario 10: Teacher Editing Course Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a course at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks "Edit Course."
@@ -164,14 +193,17 @@
 5. Teacher clicks "Save."
 
 **Expected Output:**
+
 - The system updates the course attributes and displays the updated information.
 
 ---
 
 ### Scenario 11: Teacher Editing Class Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a class at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific class.
 3. Teacher clicks "Edit Class."
@@ -179,28 +211,34 @@
 5. Teacher clicks "Save."
 
 **Expected Output:**
+
 - The system updates the class attributes and displays the updated information.
 
 ---
 
 ### Scenario 12: User Profile Modification
+
 **Objective:** Ensure users can modify their profiles.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the profile settings page.
 3. User updates username, email, password, and profile image.
 4. User clicks "Save."
 
 **Expected Output:**
+
 - The system updates the user's profile with the new information.
 
 ---
 
 ### Scenario 13: Teacher Adding Course Description
+
 **Objective:** Ensure the teacher can add a description to the courses.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks "Edit Course."
@@ -208,40 +246,49 @@
 5. Teacher clicks "Save."
 
 **Expected Output:**
+
 - The system updates the course with the new description.
 
 ---
 
 ### Scenario 14: CAPTCHA During Registration
+
 **Objective:** Ensure all users pass a CAPTCHA during registration.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters registration details.
 3. User completes the CAPTCHA.
 4. User clicks "Register."
 
 **Expected Output:**
+
 - The system registers the user only if the CAPTCHA is successfully completed.
 
 ---
 
 ### Scenario 15: Accessing Calendar
+
 **Objective:** Ensure all users have access to a calendar displaying all their classes.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the calendar page.
 
 **Expected Output:**
+
 - The calendar displays all classes the user is enrolled in.
 
 ---
 
 ### Scenario 16: Teacher Adding Students to a Course
+
 **Objective:** Ensure the teacher can add students to a course in different ways.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks "Add Students."
@@ -251,6 +298,7 @@
 7. Teacher clicks "Save."
 
 **Expected Output:**
+
 - The system adds the students to the course using the provided methods.
 
 ```
@@ -299,40 +347,50 @@
 | 16.2             |            |            |            |            |            |            |            |            |            |             |             |             |             |             |             |      X      |
 | 16.3             |            |            |            |            |            |            |            |            |            |             |             |             |             |             |             |      X      |
 
-### Execution 1
+## Execution 1
+
+- *File*: `RQ1-few-shot-generatescenarios-gpt-4o-2024-05-13-2024-07-24-16-39-52-.txt`
 
 ```markdown
 ### Scenario 1: Viewing Enrolled Courses
+
 **Objective:** Ensure all users can see the courses they are enrolled in.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the "My Courses" section.
 3. System displays a list of courses the user is enrolled in.
 
 **Expected Output:**
+
 - The user sees a list of all courses they are enrolled in.
 
 ---
 
 ### Scenario 2: Accessing Course Details
+
 **Objective:** Ensure all users can access any of the courses and see the classes ordered by date.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the "My Courses" section.
 3. User selects a specific course.
 4. System displays the course details, including a list of classes ordered by date.
 
 **Expected Output:**
+
 - The user sees the course details and a list of classes ordered by date.
 
 ---
 
 ### Scenario 3: Teacher Creating a Course
+
 **Objective:** Ensure the teacher can create a course with a title and an optional image.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "Create Course" section.
 3. Teacher enters a title for the course.
@@ -341,31 +399,38 @@
 6. System saves the course and displays a confirmation message.
 
 **Expected Output:**
+
 - The course is created with the provided title and image, and a confirmation message is displayed.
 
 ---
 
 ### Scenario 4: Teacher Creating a Class
+
 **Objective:** Ensure the teacher can create a new class within a course with all required attributes.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "My Courses" section.
 3. Teacher selects a specific course.
 4. Teacher navigates to the "Create Class" section.
-5. Teacher enters the title, description, date and time, invited students, related files, and enables the forum if desired.
+5. Teacher enters the title, description, date and time, invited students, related files, and enables the forum if
+   desired.
 6. Teacher submits the form to create the class.
 7. System saves the class and displays a confirmation message.
 
 **Expected Output:**
+
 - The class is created with all provided attributes, and a confirmation message is displayed.
 
 ---
 
 ### Scenario 5: Student Interacting with Courses on Dashboard
+
 **Objective:** Ensure students can interact with courses on their dashboard.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to the "Dashboard" section.
 3. System displays the courses the student is enrolled in with associated information.
@@ -374,14 +439,18 @@
 6. Student downloads attached files if they exist.
 
 **Expected Output:**
-- The student sees the courses with associated information, can add comments to the forum, and can download attached files.
+
+- The student sees the courses with associated information, can add comments to the forum, and can download attached
+  files.
 
 ---
 
 ### Scenario 6: Teacher Conducting a Class
+
 **Objective:** Ensure the teacher can conduct classes with all specified functionalities.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "My Courses" section.
 3. Teacher selects a specific course.
@@ -393,14 +462,18 @@
 9. Teacher ends the class.
 
 **Expected Output:**
-- The teacher can start the class, manage audio and webcam, view class information, communicate via chat, manage intervention turns, and end the class.
+
+- The teacher can start the class, manage audio and webcam, view class information, communicate via chat, manage
+  intervention turns, and end the class.
 
 ---
 
 ### Scenario 7: Student Attending a Class
+
 **Objective:** Ensure students can attend classes with all specified functionalities.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to the "My Courses" section.
 3. Student selects a specific course.
@@ -413,14 +486,18 @@
 10. Student shares their audio and webcam if their speaking request is granted.
 
 **Expected Output:**
-- The student can enter the classroom, receive and manage audio/video feed, view class information, communicate via chat, manage intervention turns, and share audio/webcam if allowed.
+
+- The student can enter the classroom, receive and manage audio/video feed, view class information, communicate via
+  chat, manage intervention turns, and share audio/webcam if allowed.
 
 ---
 
 ### Scenario 8: User Registration
+
 **Objective:** Ensure users can register using their email and pass a CAPTCHA.
 
 **Steps:**
+
 1. User navigates to the "Register" section.
 2. User enters their email and other required details.
 3. User completes the CAPTCHA.
@@ -429,28 +506,34 @@
 6. System sends a confirmation email to the user.
 
 **Expected Output:**
+
 - The user is registered successfully, and a confirmation email is sent.
 
 ---
 
 ### Scenario 9: User Login
+
 **Objective:** Ensure users can log in to the application.
 
 **Steps:**
+
 1. User navigates to the "Login" section.
 2. User enters their email and password.
 3. User submits the login form.
 4. System verifies the credentials and logs the user in.
 
 **Expected Output:**
+
 - The user is logged in successfully and redirected to the dashboard.
 
 ---
 
 ### Scenario 10: Teacher Editing Course Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a course at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "My Courses" section.
 3. Teacher selects a specific course.
@@ -460,14 +543,17 @@
 7. System saves the updated course attributes and displays a confirmation message.
 
 **Expected Output:**
+
 - The course attributes are updated successfully, and a confirmation message is displayed.
 
 ---
 
 ### Scenario 11: Teacher Editing Class Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a class at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "My Courses" section.
 3. Teacher selects a specific course.
@@ -477,14 +563,17 @@
 7. System saves the updated class attributes and displays a confirmation message.
 
 **Expected Output:**
+
 - The class attributes are updated successfully, and a confirmation message is displayed.
 
 ---
 
 ### Scenario 12: User Modifying Profile
+
 **Objective:** Ensure users can modify their profiles.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the "Profile" section.
 3. User updates their username, email, password, and profile image.
@@ -492,14 +581,17 @@
 5. System saves the updated profile details and displays a confirmation message.
 
 **Expected Output:**
+
 - The profile details are updated successfully, and a confirmation message is displayed.
 
 ---
 
 ### Scenario 13: Teacher Adding Course Description
+
 **Objective:** Ensure the teacher can add a description to the courses.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "My Courses" section.
 3. Teacher selects a specific course.
@@ -509,27 +601,33 @@
 7. System saves the course description and displays a confirmation message.
 
 **Expected Output:**
+
 - The course description is added successfully, and a confirmation message is displayed.
 
 ---
 
 ### Scenario 14: User Accessing Calendar
+
 **Objective:** Ensure all users have access to a calendar displaying all their classes.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the "Calendar" section.
 3. System displays a calendar with all the user's classes.
 
 **Expected Output:**
+
 - The user sees a calendar displaying all their classes.
 
 ---
 
 ### Scenario 15: Teacher Adding Students to a Course
+
 **Objective:** Ensure the teacher can add students to a course using different methods.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "My Courses" section.
 3. Teacher selects a specific course.
@@ -539,43 +637,54 @@
 7. System adds the students to the course and displays a confirmation message.
 
 **Expected Output:**
+
 - The students are added to the course successfully, and a confirmation message is displayed.
 ```
 
-### Execution 2
+## Execution 2
+
+- *File*: `RQ1-few-shot-generatescenarios-gpt-4o-2024-05-13-2024-07-24-17-04-56-.txt`
 
 ```markdown
 ### Scenario 1: Viewing Enrolled Courses
+
 **Objective:** Ensure all users can see the courses they are enrolled in.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. User views the list of enrolled courses.
 
 **Expected Output:**
+
 - The dashboard displays a list of courses the user is enrolled in.
 
 ---
 
 ### Scenario 2: Accessing Courses and Viewing Classes
+
 **Objective:** Ensure all users can access any of the courses and see the classes ordered by date.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. User clicks on a course.
 4. User views the list of classes ordered by date.
 
 **Expected Output:**
+
 - The course page displays a list of classes ordered by date.
 
 ---
 
 ### Scenario 3: Teacher Creating a Course
+
 **Objective:** Ensure the teacher can create courses with a title and optional image.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the course creation page.
 3. Teacher enters a course title.
@@ -583,14 +692,17 @@
 5. Teacher submits the form to create the course.
 
 **Expected Output:**
+
 - The new course is created and displayed on the teacher's dashboard.
 
 ---
 
 ### Scenario 4: Teacher Creating a Class within a Course
+
 **Objective:** Ensure the teacher can create a new class within a course with all required attributes.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the course page.
 3. Teacher clicks on "Create New Class."
@@ -601,14 +713,17 @@
 8. Teacher submits the form to create the class.
 
 **Expected Output:**
+
 - The new class is created and displayed within the course.
 
 ---
 
 ### Scenario 5: Student Interacting with Courses on Dashboard
+
 **Objective:** Ensure students can interact with courses on their dashboard.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to the dashboard.
 3. Student views the associated information for a course.
@@ -616,14 +731,17 @@
 5. Student downloads attached files (if any).
 
 **Expected Output:**
+
 - The student can see course information, add comments to the forum, and download files.
 
 ---
 
 ### Scenario 6: Teacher Conducting a Class
+
 **Objective:** Ensure the teacher can conduct classes with all specified functionalities.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the class page.
 3. Teacher starts the class.
@@ -635,14 +753,17 @@
 9. Teacher ends the class.
 
 **Expected Output:**
+
 - The teacher can conduct the class with all functionalities working as expected.
 
 ---
 
 ### Scenario 7: Student Attending a Class
+
 **Objective:** Ensure students can attend classes with all specified functionalities.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to the class page.
 3. Student enters the classroom when the teacher has started it.
@@ -655,41 +776,50 @@
 10. Student shares their audio and webcam when granted speaking request.
 
 **Expected Output:**
+
 - The student can attend and interact in the class with all functionalities working as expected.
 
 ---
 
 ### Scenario 8: User Registration
+
 **Objective:** Ensure users can register using their email and pass a CAPTCHA.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters their email, username, and password.
 3. User completes the CAPTCHA.
 4. User submits the registration form.
 
 **Expected Output:**
+
 - The user is registered and redirected to the login page.
 
 ---
 
 ### Scenario 9: User Login
+
 **Objective:** Ensure users can log in to the application.
 
 **Steps:**
+
 1. User navigates to the login page.
 2. User enters their email and password.
 3. User submits the login form.
 
 **Expected Output:**
+
 - The user is logged in and redirected to the dashboard.
 
 ---
 
 ### Scenario 10: Teacher Editing Course Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a course at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the course page.
 3. Teacher clicks on "Edit Course."
@@ -697,14 +827,17 @@
 5. Teacher submits the form to save changes.
 
 **Expected Output:**
+
 - The course attributes are updated and displayed on the course page.
 
 ---
 
 ### Scenario 11: Teacher Editing Class Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a class at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the class page.
 3. Teacher clicks on "Edit Class."
@@ -712,28 +845,34 @@
 5. Teacher submits the form to save changes.
 
 **Expected Output:**
+
 - The class attributes are updated and displayed on the class page.
 
 ---
 
 ### Scenario 12: User Modifying Profile
+
 **Objective:** Ensure users can modify their profiles.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the profile page.
 3. User updates their username, email, password, and profile image.
 4. User submits the form to save changes.
 
 **Expected Output:**
+
 - The user's profile is updated and displayed on the profile page.
 
 ---
 
 ### Scenario 13: Teacher Adding Course Description
+
 **Objective:** Ensure the teacher can add a description to the courses.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the course page.
 3. Teacher clicks on "Edit Course."
@@ -741,40 +880,49 @@
 5. Teacher submits the form to save changes.
 
 **Expected Output:**
+
 - The course description is updated and displayed on the course page.
 
 ---
 
 ### Scenario 14: CAPTCHA During Registration
+
 **Objective:** Ensure all users pass a CAPTCHA during registration.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters their email, username, and password.
 3. User completes the CAPTCHA.
 4. User submits the registration form.
 
 **Expected Output:**
+
 - The user is registered only if the CAPTCHA is successfully completed.
 
 ---
 
 ### Scenario 15: Accessing Calendar
+
 **Objective:** Ensure all users have access to a calendar displaying all their classes.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the calendar page.
 
 **Expected Output:**
+
 - The calendar displays all the user's classes.
 
 ---
 
 ### Scenario 16: Teacher Adding Students to a Course
+
 **Objective:** Ensure the teacher can add students to a course using different methods.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the course page.
 3. Teacher clicks on "Add Students."
@@ -784,44 +932,55 @@
 7. Teacher submits the form to add students.
 
 **Expected Output:**
+
 - The students are added to the course and displayed on the course page.
 
 ```
 
-### Execution 3
+## Execution 3
+
+- *File*: `RQ1-few-shot-generatescenarios-gpt-4o-2024-05-13-2024-07-24-17-06-37-.txt`
 
 ```markdown
 ### Scenario 1: Viewing Enrolled Courses
+
 **Objective:** Ensure all users can see the courses they are enrolled in.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. User clicks on the "My Courses" section.
 
 **Expected Output:**
+
 - The system displays a list of courses the user is enrolled in.
 
 ---
 
 ### Scenario 2: Accessing Course Details
+
 **Objective:** Ensure all users can access any of the courses and see the classes ordered by date.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. User clicks on a specific course.
 4. User views the list of classes within the course, ordered by date.
 
 **Expected Output:**
+
 - The system displays the course details and a list of classes ordered by date.
 
 ---
 
 ### Scenario 3: Teacher Creating a Course
+
 **Objective:** Ensure the teacher can create courses with a title and optional image.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "Create Course" section.
 3. Teacher enters the course title.
@@ -829,14 +988,17 @@
 5. Teacher clicks the "Create Course" button.
 
 **Expected Output:**
+
 - The system creates the course and displays it in the teacher's course list.
 
 ---
 
 ### Scenario 4: Teacher Creating a Class
+
 **Objective:** Ensure the teacher can create a new class within a course with all required attributes.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks on "Create Class."
@@ -849,14 +1011,17 @@
 10. Teacher clicks "Create Class" button.
 
 **Expected Output:**
+
 - The system creates the class and displays it in the course's class list.
 
 ---
 
 ### Scenario 5: Student Interacting with Courses
+
 **Objective:** Ensure students can interact with courses on their dashboard.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to the dashboard.
 3. Student clicks on a specific course.
@@ -865,6 +1030,7 @@
 6. Student downloads attached files (if available).
 
 **Expected Output:**
+
 - The system displays the course information.
 - The student can add comments to the forum.
 - The student can download attached files.
@@ -872,9 +1038,11 @@
 ---
 
 ### Scenario 6: Teacher Conducting a Class
+
 **Objective:** Ensure the teacher can conduct classes with all specified functionalities.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific class.
 3. Teacher clicks "Start Class."
@@ -887,6 +1055,7 @@
 10. Teacher ends the class.
 
 **Expected Output:**
+
 - The system starts the class.
 - The teacher can share/block audio and webcam.
 - The teacher can view class information.
@@ -897,9 +1066,11 @@
 ---
 
 ### Scenario 7: Student Attending a Class
+
 **Objective:** Ensure students can attend classes with all specified functionalities.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to a specific class.
 3. Student clicks "Enter Classroom" (when the teacher has started it).
@@ -912,6 +1083,7 @@
 10. Student shares their audio and webcam (if speaking request is granted).
 
 **Expected Output:**
+
 - The student enters the classroom.
 - The student receives the audio and video feed.
 - The student can mute the feed.
@@ -923,36 +1095,44 @@
 ---
 
 ### Scenario 8: User Registration
+
 **Objective:** Ensure users can register using their email and pass a CAPTCHA.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters their email.
 3. User completes the CAPTCHA.
 4. User submits the registration form.
 
 **Expected Output:**
+
 - The system registers the user and sends a confirmation email.
 
 ---
 
 ### Scenario 9: User Login
+
 **Objective:** Ensure users can log in to the application.
 
 **Steps:**
+
 1. User navigates to the login page.
 2. User enters their email and password.
 3. User clicks the "Login" button.
 
 **Expected Output:**
+
 - The system logs the user into the application and redirects to the dashboard.
 
 ---
 
 ### Scenario 10: Teacher Editing Course Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a course at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks "Edit Course."
@@ -960,14 +1140,17 @@
 5. Teacher clicks "Save Changes."
 
 **Expected Output:**
+
 - The system updates the course attributes and displays the updated information.
 
 ---
 
 ### Scenario 11: Teacher Editing Class Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a class at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific class.
 3. Teacher clicks "Edit Class."
@@ -975,28 +1158,34 @@
 5. Teacher clicks "Save Changes."
 
 **Expected Output:**
+
 - The system updates the class attributes and displays the updated information.
 
 ---
 
 ### Scenario 12: User Modifying Profile
+
 **Objective:** Ensure users can modify their profiles.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the profile settings.
 3. User updates the username, email, password, and profile image.
 4. User clicks "Save Changes."
 
 **Expected Output:**
+
 - The system updates the user's profile information.
 
 ---
 
 ### Scenario 13: Teacher Adding Course Description
+
 **Objective:** Ensure the teacher can add a description to the courses.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks "Edit Course."
@@ -1004,40 +1193,49 @@
 5. Teacher clicks "Save Changes."
 
 **Expected Output:**
+
 - The system updates the course description and displays it.
 
 ---
 
 ### Scenario 14: CAPTCHA During Registration
+
 **Objective:** Ensure all users pass a CAPTCHA during registration.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters their email.
 3. User completes the CAPTCHA.
 4. User submits the registration form.
 
 **Expected Output:**
+
 - The system verifies the CAPTCHA and registers the user.
 
 ---
 
 ### Scenario 15: Accessing Calendar
+
 **Objective:** Ensure all users have access to a calendar displaying all their classes.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the calendar section.
 
 **Expected Output:**
+
 - The system displays a calendar with all the user's classes.
 
 ---
 
 ### Scenario 16: Teacher Adding Students to a Course
+
 **Objective:** Ensure the teacher can add students to a course using different methods.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks "Add Students."
@@ -1047,43 +1245,54 @@
 7. Teacher clicks "Add Students."
 
 **Expected Output:**
+
 - The system adds the students to the course and displays them in the student list.
 ```
 
-### Execution 4
+## Execution 4
+
+- *File*: `RQ1-few-shot-generatescenarios-gpt-4o-2024-05-13-2024-07-24-17-08-23-.txt`
 
 ```markdown
 ### Scenario 1: Viewing Enrolled Courses
+
 **Objective:** Ensure all users can see the courses they are enrolled in.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. System displays a list of courses the user is enrolled in.
 
 **Expected Output:**
+
 - The dashboard shows all the courses the user is enrolled in.
 
 ---
 
 ### Scenario 2: Accessing Course Details
+
 **Objective:** Ensure all users can access any of the courses and see the classes ordered by date.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. User clicks on a course.
 4. System displays the course details, including a list of classes ordered by date.
 
 **Expected Output:**
+
 - The course page shows all the classes ordered by date.
 
 ---
 
 ### Scenario 3: Teacher Creating a Course
+
 **Objective:** Ensure the teacher can create courses with a title and optional image.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the course creation page.
 3. Teacher enters the course title.
@@ -1092,14 +1301,17 @@
 6. System saves the course and displays it on the teacher's dashboard.
 
 **Expected Output:**
+
 - The new course appears on the teacher's dashboard with the entered title and optional image.
 
 ---
 
 ### Scenario 4: Teacher Creating a Class
+
 **Objective:** Ensure the teacher can create a new class within a course with all required attributes.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks on "Create New Class."
@@ -1111,14 +1323,17 @@
 9. System saves the class and displays it within the course.
 
 **Expected Output:**
+
 - The new class appears within the course with all the entered details.
 
 ---
 
 ### Scenario 5: Student Interacting with Courses
+
 **Objective:** Ensure the student can interact with the courses on their dashboard.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to the dashboard.
 3. Student clicks on a course.
@@ -1127,14 +1342,17 @@
 6. Student downloads attached files (if available).
 
 **Expected Output:**
+
 - The student can see course details, add comments to the forum, and download attached files.
 
 ---
 
 ### Scenario 6: Teacher Conducting a Class
+
 **Objective:** Ensure the teacher can conduct classes with all specified functionalities.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific class.
 3. Teacher clicks on "Start Class."
@@ -1146,14 +1364,17 @@
 9. Teacher ends the class.
 
 **Expected Output:**
+
 - The teacher can start, manage, and end the class with all specified functionalities.
 
 ---
 
 ### Scenario 7: Student Attending a Class
+
 **Objective:** Ensure the student can attend classes with all specified functionalities.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to a specific class.
 3. Student clicks on "Enter Classroom" (when the teacher has started it).
@@ -1166,14 +1387,17 @@
 10. Student shares their audio and webcam when their speaking request is granted.
 
 **Expected Output:**
+
 - The student can attend and interact in the class with all specified functionalities.
 
 ---
 
 ### Scenario 8: User Registration
+
 **Objective:** Ensure users can register using their email and pass a CAPTCHA.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters their email, username, and password.
 3. User completes the CAPTCHA.
@@ -1182,28 +1406,34 @@
 6. System sends a confirmation email to the user.
 
 **Expected Output:**
+
 - The user is registered successfully and receives a confirmation email.
 
 ---
 
 ### Scenario 9: User Login
+
 **Objective:** Ensure users can log in to the application.
 
 **Steps:**
+
 1. User navigates to the login page.
 2. User enters their email and password.
 3. User clicks on the "Login" button.
 4. System verifies the credentials and logs the user in.
 
 **Expected Output:**
+
 - The user is logged in and redirected to the dashboard.
 
 ---
 
 ### Scenario 10: Teacher Editing Course Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a course at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks on "Edit Course."
@@ -1212,14 +1442,17 @@
 6. System saves the updated course attributes.
 
 **Expected Output:**
+
 - The course attributes are updated and displayed correctly.
 
 ---
 
 ### Scenario 11: User Profile Modification
+
 **Objective:** Ensure users can modify their profiles.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the profile page.
 3. User updates their username, email, password, and profile image.
@@ -1227,27 +1460,33 @@
 5. System saves the updated profile information.
 
 **Expected Output:**
+
 - The user's profile information is updated successfully.
 
 ---
 
 ### Scenario 12: Viewing Calendar
+
 **Objective:** Ensure all users have access to a calendar displaying all their classes.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the calendar page.
 3. System displays a calendar with all the user's classes.
 
 **Expected Output:**
+
 - The calendar shows all the classes the user is enrolled in.
 
 ---
 
 ### Scenario 13: Teacher Adding Students to a Course
+
 **Objective:** Ensure the teacher can add students to a course using different methods.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks on "Add Students."
@@ -1256,45 +1495,56 @@
 6. System adds the students to the course.
 
 **Expected Output:**
+
 - The students are added to the course successfully.
 
 ```
 
-### Execution 5
+## Execution 5
+
+- *File*: `RQ1-few-shot-generatescenarios-gpt-4o-2024-05-13-2024-07-24-17-10-17-.txt`
 
 ```markdown
 
 ### Scenario 1: Viewing Enrolled Courses
+
 **Objective:** Ensure all users can see the courses they are enrolled in.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. User views the list of enrolled courses.
 
 **Expected Output:**
+
 - The dashboard displays a list of all courses the user is enrolled in.
 
 ---
 
 ### Scenario 2: Accessing Course Details
+
 **Objective:** Ensure all users can access any of the courses and see the classes ordered by date.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the dashboard.
 3. User clicks on a specific course.
 4. User views the list of classes ordered by date.
 
 **Expected Output:**
+
 - The course page displays a list of classes ordered by date.
 
 ---
 
 ### Scenario 3: Teacher Creating a Course
+
 **Objective:** Ensure the teacher can create courses with a title and optional image.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the course creation page.
 3. Teacher enters a course title.
@@ -1302,14 +1552,17 @@
 5. Teacher clicks the "Create Course" button.
 
 **Expected Output:**
+
 - The system creates the course and displays it in the teacher's dashboard.
 
 ---
 
 ### Scenario 4: Teacher Creating a Class
+
 **Objective:** Ensure the teacher can create a new class within a course with all required attributes.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks on "Create New Class."
@@ -1320,14 +1573,17 @@
 8. Teacher clicks the "Create Class" button.
 
 **Expected Output:**
+
 - The system creates the class and displays it in the course's class list.
 
 ---
 
 ### Scenario 5: Student Interacting with Courses
+
 **Objective:** Ensure students can interact with courses on their dashboard.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to the dashboard.
 3. Student views associated course information.
@@ -1336,6 +1592,7 @@
 6. Student downloads attached files.
 
 **Expected Output:**
+
 - The dashboard displays course information.
 - The forum accepts and displays the student's comment.
 - The student successfully downloads attached files.
@@ -1343,9 +1600,11 @@
 ---
 
 ### Scenario 6: Teacher Conducting a Class
+
 **Objective:** Ensure the teacher can conduct classes with all specified functionalities.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific class.
 3. Teacher clicks "Start Class."
@@ -1356,14 +1615,17 @@
 8. Teacher ends the class.
 
 **Expected Output:**
+
 - The class starts and all functionalities work as expected.
 
 ---
 
 ### Scenario 7: Student Attending a Class
+
 **Objective:** Ensure students can attend classes with all specified functionalities.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to a specific class.
 3. Student enters the classroom when the teacher starts it.
@@ -1375,41 +1637,50 @@
 9. Student shares audio and webcam when granted speaking request.
 
 **Expected Output:**
+
 - The student successfully attends and interacts in the class.
 
 ---
 
 ### Scenario 8: User Registration
+
 **Objective:** Ensure users can register using their email and pass a CAPTCHA.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters email and other required details.
 3. User completes the CAPTCHA.
 4. User clicks "Register."
 
 **Expected Output:**
+
 - The system registers the user and sends a confirmation email.
 
 ---
 
 ### Scenario 9: User Login
+
 **Objective:** Ensure users can log in to the application.
 
 **Steps:**
+
 1. User navigates to the login page.
 2. User enters email and password.
 3. User clicks "Login."
 
 **Expected Output:**
+
 - The system logs the user in and redirects to the dashboard.
 
 ---
 
 ### Scenario 10: Teacher Editing Course Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a course at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks "Edit Course."
@@ -1417,14 +1688,17 @@
 5. Teacher clicks "Save."
 
 **Expected Output:**
+
 - The system updates the course attributes and displays the updated information.
 
 ---
 
 ### Scenario 11: Teacher Editing Class Attributes
+
 **Objective:** Ensure the teacher can edit the attributes of a class at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific class.
 3. Teacher clicks "Edit Class."
@@ -1432,28 +1706,34 @@
 5. Teacher clicks "Save."
 
 **Expected Output:**
+
 - The system updates the class attributes and displays the updated information.
 
 ---
 
 ### Scenario 12: User Profile Modification
+
 **Objective:** Ensure users can modify their profiles.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the profile settings page.
 3. User updates username, email, password, and profile image.
 4. User clicks "Save."
 
 **Expected Output:**
+
 - The system updates the user's profile with the new information.
 
 ---
 
 ### Scenario 13: Teacher Adding Course Description
+
 **Objective:** Ensure the teacher can add a description to the courses.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks "Edit Course."
@@ -1461,40 +1741,49 @@
 5. Teacher clicks "Save."
 
 **Expected Output:**
+
 - The system updates the course with the new description.
 
 ---
 
 ### Scenario 14: CAPTCHA During Registration
+
 **Objective:** Ensure all users pass a CAPTCHA during registration.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters registration details.
 3. User completes the CAPTCHA.
 4. User clicks "Register."
 
 **Expected Output:**
+
 - The system registers the user only if the CAPTCHA is successfully completed.
 
 ---
 
 ### Scenario 15: Accessing Calendar
+
 **Objective:** Ensure all users have access to a calendar displaying all their classes.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the calendar page.
 
 **Expected Output:**
+
 - The calendar displays all classes the user is enrolled in.
 
 ---
 
 ### Scenario 16: Teacher Adding Students to a Course
+
 **Objective:** Ensure the teacher can add students to a course in different ways.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher clicks "Add Students."
@@ -1504,5 +1793,6 @@
 7. Teacher clicks "Save."
 
 **Expected Output:**
+
 - The system adds the students to the course using the provided methods.
 ```

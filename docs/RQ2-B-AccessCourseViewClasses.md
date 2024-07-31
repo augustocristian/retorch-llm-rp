@@ -84,11 +84,9 @@ void forumNewEntryTest(String mail, String password, String role) {// 48+ 104 + 
 }
 ```
 
-## GPT-4o
+## GPT-4o Few-Shot
 
-The obtained test case with 4o:
-
-### Few-Shot
+The obtained test case with 4o FS:
 
 ```java
 
@@ -134,7 +132,7 @@ void accessCoursesAndViewClassesTest(String mail, String password, String role) 
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
   @AccessMode(resID = "loginservice", concurrency = 10, sharing = true, accessMode = "READONLY")
@@ -186,9 +184,9 @@ void accessCoursesAndViewClassesTest(String mail, String password, String role) 
 
 ```
 
-### Few Shot + COT
+## GPT-4o Few Shot + CoT
 
-The obtained test case with 4o-few-shot+CoT:
+The obtained test case with 4o FS+CoT:
 
 ```java
 
@@ -226,7 +224,7 @@ void userAccessCoursesAndViewClassesTest() {
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
 - @Test
@@ -271,11 +269,9 @@ void userAccessCoursesAndViewClassesTest() {
   }
 ```
 
-## GPT-4o-mini
+## GPT-4o-mini Few-Shot
 
-The obtained test case with 4o:
-
-### Few-Shot
+The obtained test case with 4o-mini FS:
 
 ```java
 
@@ -319,7 +315,7 @@ void userAccessCoursesAndViewClassesTest(String mail, String password, String ro
 }
 ```
 
-#### Changes Performed
+### Changes Performed
 
 ```diff
   @AccessMode(resID = "loginservice", concurrency = 10, sharing = true, accessMode = "READONLY")
@@ -368,9 +364,9 @@ void userAccessCoursesAndViewClassesTest(String mail, String password, String ro
   }
 ```
 
-### Few Shot + COT
+### GPT-4o-mini Few Shot + CoT
 
-The obtained test case with 4o-few-shot+CoT:
+The obtained test case with 4o-min FS+CoT:
 
 ```java
 

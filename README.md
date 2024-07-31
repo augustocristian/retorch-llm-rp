@@ -3,14 +3,14 @@
 
 # Replication package for *'Exploratory study of the usefulness of LLMs in System testing'*
 
-This repository contains the replication package of the paper *TO-DO*
+This repository contains the replication package of the paper *Exploratory study of the usefulness of LLMs in System
+testing*
 published at [TO-DO]
 
 The replication package comprises the test scripts used to generate the test scenarios and system test code as well
-as the different inputs required: the system test cases provided as example, the test scenario used as input and the
-test
-scenario used as example. The replication package also provides the different outputs of our exploratory study in
-the docs folder, the original raw data is available in the [ZENODO](TO-DO) repository
+as the different inputs required: the user requirements, the system test cases provided as example, the test scenarios
+used as input and the scenario used as example. The replication package also provides the different outputs of our
+exploratory study in the `\docs` folder, the original raw data is available in the [ZENODO](TO-DO) repository
 
 ## Replication package structure and naming conventions:
 
@@ -18,12 +18,15 @@ The naming conventions are :
 
 - **Test Scenarios given as output**  are named using the number of research question as well as the OpenAI model and
   prompting technique (e.g., RQ1-TestScenarios-GPT4oCOT).
-- **System Test Cases as output**  are named using the number of research question, followed by a traceability letter (
+- **System Test Cases given as output**  are named using the number of research question, followed by a traceability
+  letter (
   e.g. A,B,C or D) and the test case requested (e.g., RQ2-B-AccessCourseViewClasses).
+- **Prompt Inputs** are named with the word `input*` followed by the type of input (e.g. inputSystemTestCases.txt,
+  inputTestScenarioExample.txt etc.)
 
 The replication package is structured as follows:
 
-1. `/docs`: contains the experimental outputs as well as the experimental baselines, namely according to .
+1. `/docs`: contains the experimental outputs as well as the experimental baselines, namely as aforementioned .
 
 2. `retorch-llm-rp/src/main`: contains all the necessary Java scripting code for execute the different prompts to the
    OpenAI API.
@@ -42,9 +45,8 @@ classrooms, classes or publish and create class resources.
 To the best of our knowledge, FullTeaching has two test suites available in different
 repositories [[1]](https://github.com/elastest/full-teaching) [[2]](https://github.com/codeurjc-students/2019-FullTeaching/tree/Angular-Refactor).
 The test suite used to generate the raw datasets provided in this replication package is a compilation of the available
-test, cases in these repositories. The test suite is made available as the version 1.1.0 in
-the [retorch-st-fullteaching](https://github.com/giis-uniovi/retorch-st-fullteaching)
-GitHub repository.
+test, cases in these repositories. The test suite is made available as the version TO-DO in
+the [retorch-st-fullteaching](https://github.com/giis-uniovi/retorch-st-fullteaching) GitHub repository.
 
 The user requirements are extracted of the FullTeaching documentation (Fuente Pérez, P. (2017). FullTeaching :
 Aplicación Web de docencia con videoconferencia.) and translated to english. The spanish version can be
@@ -55,7 +57,8 @@ version [here](/retorch-llm-rp/src/main/resources/input/inputUserRequirements_en
 
 The process consists of two distinct parts: the generation of test scenarios performed through a single
 script(`RQ1Experimentation.java`),
-and the generation of the test system test  (`RQ2Experimentation.java`) using the best test scenarios of the first part.
+and the generation of the test system test cases (`RQ2Experimentation.java`) using the best test scenarios of the first
+part.
 These two parts are detailed below.
 
 - **Test Scenarios Generation:** This process is accomplished through the execution of a single script that take the
@@ -77,15 +80,13 @@ and [Experimental Set-up](docs/RQ2-ExperimentalSetup.md)
 
 ## Treatment Replication Procedure
 
-To execute the different Java scripts, you need the following requirements:
+To execute the different Java scripts, your system needs the following requirements:
 
-- Maven 3.9.7
-- Java SE 22.0.1
-
-The OpenAI versions used:
-
-- gpt-4o-mini-2024-07-18
-- gpt-4o-2024-05-13.
+1. Install java and maven, this experimentation was performed using the following versions:
+    - Maven 3.9.7
+    - Java SE 22.0.1
+2. Create an environment variable `CHATGPT_API_KEY` with your OpenAI API token
+3. Execute the two Java files.
 
 ### Replication procedure outputs
 
@@ -118,7 +119,7 @@ paper itself.
 
 ## Acknowledgments
 
-This work was supported in part by the project PID2019-105455GB-C32 under Grant MCIN/AEI/10.13039/501100011033 (Spain),
-in part by the project PID2022-137646OBC32 under Grant MCIN/ AEI/10.13039/501100011033/FEDER, UE,
-by the [Ministry of Science and Innovation (SPAIN)](https://www.ciencia.gob.es/)
-and in part by the project MASE RDS-PTR_22_24_P2.1 Cybersecurity (Italy). 
+This work was supported in part by the project PID2022-137646OBC32 under Grant MCIN/ AEI/10.13039/501100011033/FEDER,
+UE,
+by the [Ministry of Science and Innovation (SPAIN)](https://www.ciencia.gob.es/) and in part by the project MASE
+RDS-PTR_22_24_P2.1 Cybersecurity (Italy). 

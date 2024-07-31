@@ -1,6 +1,6 @@
 # RQ1 Test Scenarios Generation GPT 4o-mini Few Shot
 
-### Most consistent Execution
+## Most consistent Execution:  [Execution 4](#Execution-4)
 
 ### Summary
 
@@ -13,7 +13,8 @@
 ```markdown
 ### Test Scenarios Overview
 
-Below are the detailed test scenarios based on the provided user requirements. Each scenario outlines the steps to perform and the expected outcomes to verify system functionality.
+Below are the detailed test scenarios based on the provided user requirements. Each scenario outlines the steps to
+perform and the expected outcomes to verify system functionality.
 
 ---
 
@@ -22,11 +23,13 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that users can view the courses they are enrolled in.
 
 **Steps:**
+
 1. Log in using valid credentials.
 2. Navigate to the "My Courses" section on the dashboard.
 3. Verify that the system retrieves and displays the list of enrolled courses.
 
 **Expected Output:**
+
 - The list of enrolled courses is displayed, including course titles and any associated images.
 
 ---
@@ -36,11 +39,13 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure users can access their courses and view classes in chronological order.
 
 **Steps:**
+
 1. Log in to the application.
 2. Select a course from the "My Courses" section.
 3. Verify that the system displays course details and lists classes ordered by date.
 
 **Expected Output:**
+
 - Classes for the selected course are shown, ordered by date, with titles and scheduled times.
 
 ---
@@ -50,6 +55,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Confirm that a teacher can create a new course.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Navigate to the "Create Course" section.
 3. Enter a title for the course.
@@ -57,6 +63,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. Submit the course creation form.
 
 **Expected Output:**
+
 - The system confirms course creation and displays the new course in the teacher's course list.
 
 ---
@@ -66,6 +73,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that a teacher can create a new class with all required attributes.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Select a course from the course list.
 3. Navigate to the "Create Class" section.
@@ -76,6 +84,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 8. Submit the class creation form.
 
 **Expected Output:**
+
 - The system confirms class creation and displays it under the selected course.
 
 ---
@@ -85,6 +94,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that a student can interact with courses on their dashboard.
 
 **Steps:**
+
 1. Log in as a student.
 2. Navigate to the "My Courses" section.
 3. Select a course.
@@ -93,6 +103,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Download any attached files.
 
 **Expected Output:**
+
 - Course information is displayed, the student can post a comment, and files are downloadable.
 
 ---
@@ -102,6 +113,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure a teacher can conduct a class with full functionality.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Select a class to conduct.
 3. Start the class.
@@ -113,6 +125,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 9. End the class.
 
 **Expected Output:**
+
 - The class starts, real-time information is displayed, and all interactions occur as described.
 
 ---
@@ -122,6 +135,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Confirm that a student can attend a class and interact as expected.
 
 **Steps:**
+
 1. Log in as a student.
 2. Navigate to the "Upcoming Classes" section.
 3. Enter the classroom when the teacher starts it.
@@ -134,6 +148,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 10. Share audio and webcam if granted.
 
 **Expected Output:**
+
 - The student can enter the class, interact via chat, and share audio and webcam if the request is granted.
 
 ---
@@ -143,6 +158,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure users can register and log into the application.
 
 **Steps:**
+
 1. Navigate to the registration page.
 2. Enter a valid email address and password.
 3. Complete CAPTCHA verification.
@@ -151,6 +167,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Log in using the registered email and password.
 
 **Expected Output:**
+
 - Successful registration is confirmed, a confirmation email is sent, and login is successful.
 
 ---
@@ -160,12 +177,14 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that users can modify their profiles.
 
 **Steps:**
+
 1. Log in to the application.
 2. Navigate to the "Profile" section.
 3. Modify username, email, password, and profile image.
 4. Submit the profile changes.
 
 **Expected Output:**
+
 - The profile is updated successfully.
 
 ---
@@ -175,6 +194,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure a teacher can edit course and class attributes.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Select a course to edit.
 3. Modify the course title and description.
@@ -184,6 +204,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 7. Submit the changes.
 
 **Expected Output:**
+
 - Both course and class attributes are updated successfully.
 
 ---
@@ -193,6 +214,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that a teacher can add students to a course using different methods.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Select a course.
 3. Navigate to the "Add Students" section.
@@ -201,6 +223,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Upload a file containing email addresses and submit.
 
 **Expected Output:**
+
 - Students are added to the course for each method used.
 
 ---
@@ -210,11 +233,13 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure all users can access a calendar displaying all their classes.
 
 **Steps:**
+
 1. Log in to the application.
 2. Navigate to the "Calendar" section.
 3. Verify that the system retrieves and displays all classes associated with the user.
 
 **Expected Output:**
+
 - A calendar view with all classes, including dates and times, is displayed.
 ```
 
@@ -262,40 +287,50 @@ Below are the detailed test scenarios based on the provided user requirements. E
 | 16.2             |            |            |            |            |            |            |            |            |            |             |             |      X      |
 | 16.3             |            |            |            |            |            |            |            |            |            |             |             |      X      |
 
-### Execution 1
+## Execution 1
+
+- *File*: `RQ1-few-shot-generatescenariosgpt-4o-mini-2024-07-182024-07-24-15-40-50-.txt`
 
 ```markdown
 
 ### Test Scenario 1: User Enrollment and Course Visibility
+
 **Objective:** Verify that all users can see the courses they are enrolled in.
 
 **Scenario:**
+
 1. User logs into the application using valid credentials.
 2. User navigates to the "My Courses" section.
 3. System retrieves and displays the list of courses the user is enrolled in.
 
 **Expected Output:**
+
 - The system displays a list of courses that the user is enrolled in, including course titles and any relevant images.
 
 ---
 
 ### Test Scenario 2: Accessing Course Classes
+
 **Objective:** Ensure that all users can access their courses and see classes ordered by date.
 
 **Scenario:**
+
 1. User logs into the application.
 2. User selects a course from the "My Courses" section.
 3. System displays the classes for that course, ordered by date.
 
 **Expected Output:**
+
 - The system shows the classes for the selected course in chronological order, including titles, dates, and times.
 
 ---
 
 ### Test Scenario 3: Teacher Course Creation
+
 **Objective:** Verify that a teacher can create a new course.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "Create Course" section.
 3. Teacher enters a title for the course.
@@ -303,14 +338,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. Teacher submits the course creation form.
 
 **Expected Output:**
+
 - The system confirms the course has been created and displays the new course in the teacher's course list.
 
 ---
 
 ### Test Scenario 4: Creating a Class within a Course
+
 **Objective:** Ensure that a teacher can create a new class within a course.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher selects a course from their course list.
 3. Teacher navigates to the "Create Class" section.
@@ -321,14 +359,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 8. Teacher submits the class creation form.
 
 **Expected Output:**
+
 - The system confirms the class has been created and displays it in the course's class list.
 
 ---
 
 ### Test Scenario 5: Student Interaction on Dashboard
+
 **Objective:** Verify that students can interact with courses on their dashboard.
 
 **Scenario:**
+
 1. Student logs into the application.
 2. Student navigates to the "My Courses" section.
 3. Student selects a course.
@@ -337,14 +378,18 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Student downloads any available attached files.
 
 **Expected Output:**
-- The system displays the course information, confirms the comment has been added, and successfully downloads the attached files.
+
+- The system displays the course information, confirms the comment has been added, and successfully downloads the
+  attached files.
 
 ---
 
 ### Test Scenario 6: Conducting a Class as a Teacher
+
 **Objective:** Ensure that a teacher can conduct a class with all functionalities.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher selects a class to conduct.
 3. Teacher starts the class.
@@ -356,14 +401,18 @@ Below are the detailed test scenarios based on the provided user requirements. E
 9. Teacher ends the class.
 
 **Expected Output:**
-- The system confirms the class has started, displays all relevant information, and successfully executes all communication and intervention actions.
+
+- The system confirms the class has started, displays all relevant information, and successfully executes all
+  communication and intervention actions.
 
 ---
 
 ### Test Scenario 7: Attending a Class as a Student
+
 **Objective:** Verify that a student can attend a class and interact.
 
 **Scenario:**
+
 1. Student logs into the application.
 2. Student navigates to the "Upcoming Classes" section.
 3. Student enters a classroom when the teacher has started it.
@@ -376,42 +425,52 @@ Below are the detailed test scenarios based on the provided user requirements. E
 10. If granted, student shares their audio and webcam.
 
 **Expected Output:**
-- The system confirms the student has entered the classroom, displays the class information, and successfully executes all communication and intervention actions.
+
+- The system confirms the student has entered the classroom, displays the class information, and successfully executes
+  all communication and intervention actions.
 
 ---
 
 ### Test Scenario 8: User Registration
+
 **Objective:** Ensure that users can register using their email.
 
 **Scenario:**
+
 1. User navigates to the registration page.
 2. User enters a valid email address and other required information.
 3. User completes CAPTCHA verification.
 4. User submits the registration form.
 
 **Expected Output:**
+
 - The system confirms successful registration and sends a verification email to the user.
 
 ---
 
 ### Test Scenario 9: User Profile Modification
+
 **Objective:** Verify that users can modify their profiles.
 
 **Scenario:**
+
 1. User logs into the application.
 2. User navigates to the "Profile" section.
 3. User modifies username, email, password, and profile image.
 4. User submits the changes.
 
 **Expected Output:**
+
 - The system confirms that the profile has been updated successfully.
 
 ---
 
 ### Test Scenario 10: Teacher Editing Course Attributes
+
 **Objective:** Ensure that a teacher can edit course attributes at any time.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher selects a course from their course list.
 3. Teacher navigates to the "Edit Course" section.
@@ -419,26 +478,32 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. Teacher submits the changes.
 
 **Expected Output:**
+
 - The system confirms that the course attributes have been updated successfully.
 
 ---
 
 ### Test Scenario 11: Calendar Access for Users
+
 **Objective:** Verify that all users can access a calendar displaying all their classes.
 
 **Scenario:**
+
 1. User logs into the application.
 2. User navigates to the "Calendar" section.
 
 **Expected Output:**
+
 - The system displays a calendar view with all classes scheduled for the user.
 
 ---
 
 ### Test Scenario 12: Adding Students to a Course
+
 **Objective:** Ensure that a teacher can add students to a course in various ways.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher selects a course from their course list.
 3. Teacher navigates to the "Add Students" section.
@@ -447,45 +512,56 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Teacher uploads a file containing email addresses and submits.
 
 **Expected Output:**
+
 - The system confirms that students have been added successfully for each method used.
 
 ```
 
-### Execution 2
+## Execution 2
+
+- *File*: `RQ1-few-shot-generatescenariosgpt-4o-mini-2024-07-182024-07-24-15-41-37-.txt`
 
 ```markdown
 ### Test Scenario 1: User Enrollment and Course Visibility
+
 **Objective:** Verify that all users can see the courses they are enrolled in.
 
 **Scenario:**
+
 1. User logs into the application using valid credentials.
 2. User navigates to the dashboard.
 3. User checks the "My Courses" section.
 4. User verifies the list of courses displayed.
 
 **Expected Output:**
+
 - The system displays all courses the user is enrolled in, including course titles and any associated images.
 
 ---
 
 ### Test Scenario 2: Course Access and Class Ordering
+
 **Objective:** Ensure all users can access courses and see classes ordered by date.
 
 **Scenario:**
+
 1. User logs into the application.
 2. User navigates to the "Courses" section.
 3. User selects a course from the list.
 4. User views the classes within the course.
 
 **Expected Output:**
+
 - The system displays all classes for the selected course, ordered by date, along with their titles and scheduled times.
 
 ---
 
 ### Test Scenario 3: Teacher Course Creation
+
 **Objective:** Verify that a teacher can create a new course.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "Create Course" section.
 3. Teacher enters a title for the course.
@@ -493,14 +569,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. Teacher submits the course creation form.
 
 **Expected Output:**
+
 - The system confirms the course has been created successfully and displays the new course in the teacher's course list.
 
 ---
 
 ### Test Scenario 4: Class Creation by Teacher
+
 **Objective:** Ensure a teacher can create a new class within a course.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher selects an existing course.
 3. Teacher navigates to the "Create Class" section.
@@ -511,14 +590,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 8. Teacher submits the class creation form.
 
 **Expected Output:**
+
 - The system confirms the class has been created successfully and displays it within the course.
 
 ---
 
 ### Test Scenario 5: Student Interaction on Dashboard
+
 **Objective:** Verify that students can interact with courses on their dashboard.
 
 **Scenario:**
+
 1. Student logs into the application.
 2. Student navigates to the dashboard.
 3. Student selects a course.
@@ -527,14 +609,18 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Student downloads an attached file (if available).
 
 **Expected Output:**
-- The system displays the course information correctly, the comment is added to the forum, and the file is downloaded successfully.
+
+- The system displays the course information correctly, the comment is added to the forum, and the file is downloaded
+  successfully.
 
 ---
 
 ### Test Scenario 6: Teacher Conducting a Class
+
 **Objective:** Ensure a teacher can conduct a class with all functionalities.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher selects a class to conduct.
 3. Teacher starts the class.
@@ -546,14 +632,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 9. Teacher ends the class.
 
 **Expected Output:**
+
 - The system allows the teacher to perform all actions successfully, and class information is updated in real-time.
 
 ---
 
 ### Test Scenario 7: Student Attending a Class
+
 **Objective:** Verify that students can attend classes and interact.
 
 **Scenario:**
+
 1. Student logs into the application.
 2. Student navigates to the "Upcoming Classes" section.
 3. Student selects a class that has started.
@@ -567,14 +656,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 11. Student shares their audio and webcam (if granted).
 
 **Expected Output:**
+
 - The system allows the student to perform all actions successfully, and class information is updated in real-time.
 
 ---
 
 ### Test Scenario 8: User Registration and Login
+
 **Objective:** Ensure users can register and log in to the application.
 
 **Scenario:**
+
 1. User navigates to the registration page.
 2. User enters a valid email address and password.
 3. User completes the CAPTCHA.
@@ -583,28 +675,34 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. User logs into the application using the registered email and password.
 
 **Expected Output:**
+
 - The system confirms successful registration and allows the user to log in.
 
 ---
 
 ### Test Scenario 9: Profile Modification
+
 **Objective:** Verify that users can modify their profiles.
 
 **Scenario:**
+
 1. User logs into the application.
 2. User navigates to the "Profile" section.
 3. User modifies username, email, password, and profile image.
 4. User submits the changes.
 
 **Expected Output:**
+
 - The system confirms that the profile has been updated successfully with the new information.
 
 ---
 
 ### Test Scenario 10: Teacher Editing Course and Class Attributes
+
 **Objective:** Ensure a teacher can edit course and class attributes.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher selects a course to edit.
 3. Teacher modifies the course title and description.
@@ -614,27 +712,33 @@ Below are the detailed test scenarios based on the provided user requirements. E
 7. Teacher saves the changes.
 
 **Expected Output:**
+
 - The system confirms that both the course and class attributes have been updated successfully.
 
 ---
 
 ### Test Scenario 11: Calendar Access
+
 **Objective:** Verify that users can access a calendar displaying all their classes.
 
 **Scenario:**
+
 1. User logs into the application.
 2. User navigates to the "Calendar" section.
 3. User views the calendar for the current month.
 
 **Expected Output:**
+
 - The system displays all classes scheduled for the user in the calendar view.
 
 ---
 
 ### Test Scenario 12: Adding Students to a Course
+
 **Objective:** Ensure a teacher can add students to a course using various methods.
 
 **Scenario:**
+
 1. Teacher logs into the application.
 2. Teacher selects a course.
 3. Teacher navigates to the "Add Students" section.
@@ -643,48 +747,59 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Teacher uploads a file containing email addresses and submits.
 
 **Expected Output:**
+
 - The system confirms that students have been added successfully using all methods.
 
 ```
 
-### Execution 3
+## Execution 3
+
+- *File*: `RQ1-few-shot-generatescenariosgpt-4o-mini-2024-07-182024-07-24-15-42-57-.txt`
 
 ```markdown
 
 ### Test Scenarios
 
 #### **Test Scenario 1: User Enrollment and Course Visibility**
+
 **Objective:** Verify that all users can see the courses they are enrolled in.
 
 **Steps:**
+
 1. Log into the application using valid credentials.
 2. Navigate to the "My Courses" section.
 3. The system retrieves the list of courses the user is enrolled in.
 4. Verify that all enrolled courses are displayed.
 
 **Expected Output:**
+
 - The system displays a list of courses with titles and any associated images.
 
 ---
 
 #### **Test Scenario 2: Accessing Course Classes**
+
 **Objective:** Ensure users can access courses and see classes ordered by date.
 
 **Steps:**
+
 1. Log into the application.
 2. Navigate to the "Courses" section.
 3. Select a specific course.
 4. The system retrieves and displays all classes associated with the selected course, ordered by date.
 
 **Expected Output:**
+
 - Classes for the selected course are displayed in chronological order with titles, dates, and times.
 
 ---
 
 #### **Test Scenario 3: Teacher Course Creation**
+
 **Objective:** Verify that a teacher can create a course with a title and an optional image.
 
 **Steps:**
+
 1. Log into the application as a teacher.
 2. Navigate to the "Create Course" section.
 3. Enter a course title.
@@ -693,15 +808,18 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. The system saves the course and confirms its creation.
 
 **Expected Output:**
+
 - Confirmation that the course has been created successfully.
 - The new course appears in the teacher's course list.
 
 ---
 
 #### **Test Scenario 4: Creating a Class within a Course**
+
 **Objective:** Ensure a teacher can create a new class within a course with all required attributes.
 
 **Steps:**
+
 1. Log into the application as a teacher.
 2. Navigate to a specific course.
 3. Select "Create Class."
@@ -712,15 +830,18 @@ Below are the detailed test scenarios based on the provided user requirements. E
 8. The system saves the class and confirms its creation.
 
 **Expected Output:**
+
 - Confirmation that the class has been created successfully.
 - The new class appears in the course's class list.
 
 ---
 
 #### **Test Scenario 5: Student Interaction on Dashboard**
+
 **Objective:** Verify that students can interact with courses on their dashboard.
 
 **Steps:**
+
 1. Log into the application as a student.
 2. Navigate to the dashboard.
 3. View the associated information for each course.
@@ -728,6 +849,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. Download attached files from a course (if available).
 
 **Expected Output:**
+
 - Information for each course is displayed clearly.
 - Comment is successfully added to the forum.
 - File downloads successfully.
@@ -735,9 +857,11 @@ Below are the detailed test scenarios based on the provided user requirements. E
 ---
 
 #### **Test Scenario 6: Conducting a Class as a Teacher**
+
 **Objective:** Ensure a teacher can conduct a class with all functionalities.
 
 **Steps:**
+
 1. Log into the application as a teacher.
 2. Navigate to a scheduled class.
 3. Start the class.
@@ -749,6 +873,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 9. End the class.
 
 **Expected Output:**
+
 - The class starts successfully with audio and video shared.
 - Class information is displayed correctly.
 - Teacher can communicate via chat and manage intervention turns.
@@ -757,9 +882,11 @@ Below are the detailed test scenarios based on the provided user requirements. E
 ---
 
 #### **Test Scenario 7: Attending a Class as a Student**
+
 **Objective:** Verify that students can attend classes and interact.
 
 **Steps:**
+
 1. Log into the application as a student.
 2. Navigate to the scheduled class.
 3. Enter the classroom when the teacher starts it.
@@ -772,6 +899,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 10. Share audio and webcam (if granted).
 
 **Expected Output:**
+
 - Successfully enter the classroom and receive audio/video feed.
 - Mute feed and view class information.
 - Communicate via chat and manage intervention requests.
@@ -779,9 +907,11 @@ Below are the detailed test scenarios based on the provided user requirements. E
 ---
 
 #### **Test Scenario 8: User Registration and Login**
+
 **Objective:** Ensure users can register and log in to the application.
 
 **Steps:**
+
 1. Navigate to the registration page.
 2. Enter a valid email, username, and password.
 3. Complete the CAPTCHA.
@@ -792,15 +922,18 @@ Below are the detailed test scenarios based on the provided user requirements. E
 8. Submit the login form.
 
 **Expected Output:**
+
 - Confirmation of successful registration.
 - Successful login and redirection to the dashboard.
 
 ---
 
 #### **Test Scenario 9: Profile Modification**
+
 **Objective:** Verify that users can modify their profiles.
 
 **Steps:**
+
 1. Log into the application.
 2. Navigate to the profile settings.
 3. Modify username, email, password, and profile image.
@@ -808,14 +941,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. System saves the changes and confirms.
 
 **Expected Output:**
+
 - Confirmation that the profile has been updated successfully.
 
 ---
 
 #### **Test Scenario 10: Adding Students to a Course**
+
 **Objective:** Ensure a teacher can add students to a course using different methods.
 
 **Steps:**
+
 1. Log into the application as a teacher.
 2. Navigate to a specific course.
 3. Select "Add Students."
@@ -824,16 +960,20 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Upload a file containing email addresses and submit.
 
 **Expected Output:**
+
 - Confirmation that students have been added successfully for each method used.
 
 ```
 
-### Execution 4
+## Execution 4
+
+- *File*: `RQ1-few-shot-generatescenariosgpt-4o-mini-2024-07-182024-07-24-15-43-50-.txt`
 
 ```markdown
 ### Test Scenarios Overview
 
-Below are the detailed test scenarios based on the provided user requirements. Each scenario outlines the steps to perform and the expected outcomes to verify system functionality.
+Below are the detailed test scenarios based on the provided user requirements. Each scenario outlines the steps to
+perform and the expected outcomes to verify system functionality.
 
 ---
 
@@ -842,11 +982,13 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that users can view the courses they are enrolled in.
 
 **Steps:**
+
 1. Log in using valid credentials.
 2. Navigate to the "My Courses" section on the dashboard.
 3. Verify that the system retrieves and displays the list of enrolled courses.
 
 **Expected Output:**
+
 - The list of enrolled courses is displayed, including course titles and any associated images.
 
 ---
@@ -856,11 +998,13 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure users can access their courses and view classes in chronological order.
 
 **Steps:**
+
 1. Log in to the application.
 2. Select a course from the "My Courses" section.
 3. Verify that the system displays course details and lists classes ordered by date.
 
 **Expected Output:**
+
 - Classes for the selected course are shown, ordered by date, with titles and scheduled times.
 
 ---
@@ -870,6 +1014,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Confirm that a teacher can create a new course.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Navigate to the "Create Course" section.
 3. Enter a title for the course.
@@ -877,6 +1022,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. Submit the course creation form.
 
 **Expected Output:**
+
 - The system confirms course creation and displays the new course in the teacher's course list.
 
 ---
@@ -886,6 +1032,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that a teacher can create a new class with all required attributes.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Select a course from the course list.
 3. Navigate to the "Create Class" section.
@@ -896,6 +1043,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 8. Submit the class creation form.
 
 **Expected Output:**
+
 - The system confirms class creation and displays it under the selected course.
 
 ---
@@ -905,6 +1053,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that a student can interact with courses on their dashboard.
 
 **Steps:**
+
 1. Log in as a student.
 2. Navigate to the "My Courses" section.
 3. Select a course.
@@ -913,6 +1062,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Download any attached files.
 
 **Expected Output:**
+
 - Course information is displayed, the student can post a comment, and files are downloadable.
 
 ---
@@ -922,6 +1072,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure a teacher can conduct a class with full functionality.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Select a class to conduct.
 3. Start the class.
@@ -933,6 +1084,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 9. End the class.
 
 **Expected Output:**
+
 - The class starts, real-time information is displayed, and all interactions occur as described.
 
 ---
@@ -942,6 +1094,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Confirm that a student can attend a class and interact as expected.
 
 **Steps:**
+
 1. Log in as a student.
 2. Navigate to the "Upcoming Classes" section.
 3. Enter the classroom when the teacher starts it.
@@ -954,6 +1107,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 10. Share audio and webcam if granted.
 
 **Expected Output:**
+
 - The student can enter the class, interact via chat, and share audio and webcam if the request is granted.
 
 ---
@@ -963,6 +1117,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure users can register and log into the application.
 
 **Steps:**
+
 1. Navigate to the registration page.
 2. Enter a valid email address and password.
 3. Complete CAPTCHA verification.
@@ -971,6 +1126,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Log in using the registered email and password.
 
 **Expected Output:**
+
 - Successful registration is confirmed, a confirmation email is sent, and login is successful.
 
 ---
@@ -980,12 +1136,14 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that users can modify their profiles.
 
 **Steps:**
+
 1. Log in to the application.
 2. Navigate to the "Profile" section.
 3. Modify username, email, password, and profile image.
 4. Submit the profile changes.
 
 **Expected Output:**
+
 - The profile is updated successfully.
 
 ---
@@ -995,6 +1153,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure a teacher can edit course and class attributes.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Select a course to edit.
 3. Modify the course title and description.
@@ -1004,6 +1163,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 7. Submit the changes.
 
 **Expected Output:**
+
 - Both course and class attributes are updated successfully.
 
 ---
@@ -1013,6 +1173,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Verify that a teacher can add students to a course using different methods.
 
 **Steps:**
+
 1. Log in as a teacher.
 2. Select a course.
 3. Navigate to the "Add Students" section.
@@ -1021,6 +1182,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Upload a file containing email addresses and submit.
 
 **Expected Output:**
+
 - Students are added to the course for each method used.
 
 ---
@@ -1030,52 +1192,64 @@ Below are the detailed test scenarios based on the provided user requirements. E
 **Objective:** Ensure all users can access a calendar displaying all their classes.
 
 **Steps:**
+
 1. Log in to the application.
 2. Navigate to the "Calendar" section.
 3. Verify that the system retrieves and displays all classes associated with the user.
 
 **Expected Output:**
+
 - A calendar view with all classes, including dates and times, is displayed.
 ```
 
-### Execution 5
+## Execution 5
+
+- *File*: `RQ1-few-shot-generatescenariosgpt-4o-mini-2024-07-182024-07-24-15-44-42-.txt`
 
 ```markdown
 
 ## Test Scenarios
 
 ### Test Scenario 1: User Enrollment and Course Visibility
+
 **Objective:** Verify that all users can see the courses they are enrolled in.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the "My Courses" section.
 3. System retrieves the list of courses the user is enrolled in.
 4. System displays the list of courses.
 
 **Expected Output:**
+
 - The user sees a list of all courses they are enrolled in, with titles and any associated images.
 
 ---
 
 ### Test Scenario 2: Accessing Course Classes
+
 **Objective:** Ensure all users can access their courses and see classes ordered by date.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to a specific course from "My Courses."
 3. System retrieves the classes associated with the course.
 4. System orders the classes by date and displays them.
 
 **Expected Output:**
+
 - The user sees a list of classes for the selected course, ordered by date.
 
 ---
 
 ### Test Scenario 3: Teacher Creating a Course
+
 **Objective:** Verify that a teacher can create a course with a title and an optional image.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to the "Create Course" section.
 3. Teacher enters a title for the course.
@@ -1083,14 +1257,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. Teacher submits the course creation form.
 
 **Expected Output:**
+
 - The system confirms the course has been created successfully, and the course appears in the teacher's course list.
 
 ---
 
 ### Test Scenario 4: Teacher Creating a Class
+
 **Objective:** Ensure a teacher can create a new class within a course with all required attributes.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher selects "Create Class."
@@ -1098,14 +1275,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. Teacher submits the class creation form.
 
 **Expected Output:**
+
 - The system confirms the class has been created successfully, and the class appears in the course's class list.
 
 ---
 
 ### Test Scenario 5: Student Interacting with Courses
+
 **Objective:** Verify that a student can interact with courses on their dashboard.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to "My Courses."
 3. Student selects a course.
@@ -1114,14 +1294,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Student downloads any available attached files.
 
 **Expected Output:**
+
 - The student sees the course information, successfully adds a comment to the forum, and downloads the attached files.
 
 ---
 
 ### Test Scenario 6: Teacher Conducting a Class
+
 **Objective:** Ensure a teacher can conduct a class with all functionalities.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a scheduled class.
 3. Teacher starts the class.
@@ -1133,14 +1316,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 9. Teacher ends the class.
 
 **Expected Output:**
+
 - The system confirms the class has started, and the teacher can perform all actions successfully.
 
 ---
 
 ### Test Scenario 7: Student Attending a Class
+
 **Objective:** Verify that a student can attend a class and interact as expected.
 
 **Steps:**
+
 1. Student logs into the application.
 2. Student navigates to "Upcoming Classes."
 3. Student enters the classroom when the teacher starts it.
@@ -1153,42 +1339,51 @@ Below are the detailed test scenarios based on the provided user requirements. E
 10. If granted, student shares their audio and webcam.
 
 **Expected Output:**
+
 - The student successfully enters the class, interacts via chat, and performs all actions as expected.
 
 ---
 
 ### Test Scenario 8: User Registration
+
 **Objective:** Ensure users can register using their email and pass CAPTCHA.
 
 **Steps:**
+
 1. User navigates to the registration page.
 2. User enters their email, username, and password.
 3. User completes the CAPTCHA.
 4. User submits the registration form.
 
 **Expected Output:**
+
 - The system confirms successful registration and sends a verification email.
 
 ---
 
 ### Test Scenario 9: User Profile Modification
+
 **Objective:** Verify that users can modify their profiles.
 
 **Steps:**
+
 1. User logs into the application.
 2. User navigates to the "Profile" section.
 3. User modifies username, email, password, and profile image.
 4. User submits the changes.
 
 **Expected Output:**
+
 - The system confirms that the profile has been updated successfully.
 
 ---
 
 ### Test Scenario 10: Teacher Editing Course Attributes
+
 **Objective:** Ensure a teacher can edit course attributes at any time.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher selects "Edit Course."
@@ -1196,14 +1391,17 @@ Below are the detailed test scenarios based on the provided user requirements. E
 5. Teacher submits the changes.
 
 **Expected Output:**
+
 - The system confirms that the course attributes have been updated successfully.
 
 ---
 
 ### Test Scenario 11: Teacher Adding Students to a Course
+
 **Objective:** Verify that a teacher can add students to a course using various methods.
 
 **Steps:**
+
 1. Teacher logs into the application.
 2. Teacher navigates to a specific course.
 3. Teacher selects "Add Students."
@@ -1212,6 +1410,7 @@ Below are the detailed test scenarios based on the provided user requirements. E
 6. Teacher uploads a file containing email addresses and submits.
 
 **Expected Output:**
+
 - The system confirms that students have been added successfully using all methods.
 
 ```
