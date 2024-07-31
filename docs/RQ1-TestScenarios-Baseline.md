@@ -2,9 +2,9 @@
 
 ## Summary
 
-| Number of Test Cases | % Coverage |
-|----------------------|------------|
-| 21                   | 79.48 %    |
+|  Number of Test Cases  |  % Coverage  |
+|:----------------------:|:------------:|
+|           21           |   79.48 %    |
 
 ## Coverage Matrix
 
