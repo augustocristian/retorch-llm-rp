@@ -122,7 +122,7 @@ paper itself.
 
 ## Acknowledgments
 
-This work was supported in part by the project PID2022-137646OBC32 under Grant MCIN/ AEI/10.13039/501100011033/FEDER,
+This work was supported in part by the project PID2022-137646OB-C32 under Grant MCIN/ AEI/10.13039/501100011033/FEDER,
 UE,
 by the [Ministry of Science and Innovation (SPAIN)](https://www.ciencia.gob.es/) and in part by the project MASE
 RDS-PTR_22_24_P2.1 Cybersecurity (Italy). 
