@@ -23,6 +23,7 @@ public class ExperimentationHelper {
 
     static final String PATH_KEY = "CHATGPT_API_KEY";
     private final Logger log = LoggerFactory.getLogger(this.getClass());
+
     public ExperimentationHelper() {
         //This is the default constructor to avoid smells
     }

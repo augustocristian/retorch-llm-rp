@@ -1,14 +1,14 @@
-# Research Question 1: How LLMs outperform generating scenarios
+# Research Question 1: How LLMs perform generating scenarios
 
-|         Model          | Prompt Technique | NºScenarios | % Coverage |
-|:----------------------:|:----------------:|-------------|-----------:|
-|        Baseline        |     Baseline     |             |    79.48 % |
-|   gpt-4o-2024-05-13    |     Few Shot     | 15          |      100 % |
-|   gpt-4o-2024-05-13    | Few Shot + CoT	  | 16          |      100 % |
-| gpt-4o-mini-2024-07-18 |     Few Shot     | 12          |    92.30 % |
-| gpt-4o-mini-2024-07-18 | Few Shot + CoT	  | 12          |    97.47 % |
+|         Model          | Prompt Technique | % Coverage    | Median | STD Desv. |
+|:----------------------:|:----------------:|:--------------|-------:|----------:|
+|        Baseline        |     Baseline     | 79.48 %       |        |           |
+|   gpt-4o-2024-05-13    |     Few Shot     | 98.97 % (AVG) |    100 |      2.39 |
+|   gpt-4o-2024-05-13    | Few Shot + CoT	  | 100 % (AVG)   |    100 |         0 |
+| gpt-4o-mini-2024-07-18 |     Few Shot     | 94.36 % (AVG) |  94.87 |      3.34 |
+| gpt-4o-mini-2024-07-18 | Few Shot + CoT	  | 91.79 % (AVG) |  92.31 |      4.58 |
 
-# Research Question 2: How LLMs outperform generating scenarios
+# Research Question 2: How LLMs perform generating test cases
 
 |         Model          | Prompt Technique | (A) View Courses | (B) View Classes | (C) Create Course | (D) View Calendar | Average | Average Lines Changed |
 |:----------------------:|:----------------:|:----------------:|:----------------:|:-----------------:|:-----------------:|:--------|----------------------:|
