@@ -46,7 +46,7 @@ public class RQ2Experimentation {
     }
 
     static String promptTestCasesFewShotCoT(String testScenarios, String examples, String nameFunctionality) {
-        return "Let’s think step by step.\n Describe the solution, and breaking the solution down as a task list for then generate the code. \n" + promptTestCasesFewShot(testScenarios, examples, nameFunctionality);
+        return "Let’s think step by step, describe the solution by breaking it down into a task list for then generate the code. \n" + promptTestCasesFewShot(testScenarios, examples, nameFunctionality);
     }
 
     static String promptTestCasesFewShot(String testScenarios, String examples, String nameFunctionality) {
