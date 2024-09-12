@@ -3,8 +3,7 @@
 
 # Replication package for *'Exploratory study of the usefulness of LLMs in System testing'*
 
-This repository contains the replication package of the paper *Exploratory study of the usefulness of LLMs in System
-testing*
+This repository contains the replication package of the paper *Software System Testing assisted by Large Language Models: An Exploratory Study*
 published at [TO-DO]
 
 The replication package comprises the test scripts used to generate the test scenarios and system test code as well

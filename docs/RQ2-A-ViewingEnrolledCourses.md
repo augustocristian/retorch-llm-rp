@@ -194,10 +194,10 @@ void viewEnrolledCoursesTest() {
 -void viewEnrolledCoursesTest() {
 +void viewEnrolledCoursesTest(String mail, String password, String role) {
     // Setup
-    -String email = "user@example.com";
-    -String password = "password";
-    -String[] expectedCourses = {"Course 1", "Course 2", "Course 3"};
-    +String[] expectedCourses = {"Pseudoscientific course for treating the evil eye",  "Don't mind. This is a real course"};
+-    String email = "user@example.com";
+-    String password = "password";
+-    String[] expectedCourses = {"Course 1", "Course 2", "Course 3"};
++    String[] expectedCourses = {"Pseudoscientific course for treating the evil eye",  "Don't mind. This is a real course"};
 
     // Login
     this.slowLogin(user, mail, password);
